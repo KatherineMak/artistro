@@ -18,12 +18,12 @@ mixin offer__item(color, img, title)
 
 //- BEGIN offer
 section(class="md:pb-32 mt:pt-20 xl:py-20").offer.py-20.relative
-    div(class="md:block", style="background-image: url(../img/bg/decor-offer.svg)").hidden.offer__decor.absolute.bg-contain.bg-no-repeat.z-0
+    div(class="md:block", style="background-image: url(img/bg/decor-offer.svg)").hidden.offer__decor.absolute.bg-contain.bg-no-repeat.z-0
     .container
         div(class="").flex.flex-wrap.justify-between
-            +offer__item('violet',  '../img/offer/offer-01.png', 'Best Sellers')
-            +offer__item('yellow', '../img/offer/offer-02.png', 'Sale Now')
-            +offer__item('blue', '../img/offer/offer-03.png', 'Reward Program')
+            +offer__item('violet',  'img/offer/offer-01.png', 'Best Sellers')
+            +offer__item('yellow', 'img/offer/offer-02.png', 'Sale Now')
+            +offer__item('blue', 'img/offer/offer-03.png', 'Reward Program')
 
 
 //- END offer

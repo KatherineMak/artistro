@@ -7,14 +7,14 @@ mixin how_item(img, heading, text)
         p.font-sans.text-black.text-base.text-center=text
 
 section.howWork.relative.overflow-hidden
-    div(class="md:block", style="background-image: url(../img/bg/decor-offer.svg)").hidden.howWork__decor.absolute.bg-contain.bg-no-repeat.z-0
+    div(class="md:block", style="background-image: url(img/bg/decor-offer.svg)").hidden.howWork__decor.absolute.bg-contain.bg-no-repeat.z-0
     div(class="sm:px-0").container.relative.z-1.px-5
         h2.mt-10.font-mono.text-black.text-90px.leading-none.font-bold How we work together
         div(class="sm:flex-no-wrap").flex.flex-wrap.justify-between.items-start.my-16
             div(class="w-full sm:w-3/12").flex.flex-col.items-center.items-center
-                +how_item('../img/ambassador/how-item-1.png', 'Inspiration', 'Our ambassadors get insider information about the brand, including key brand, messaging, and campaign messaging. We will have genuine, one-on-one conversations about our brand and how to promote it.')
+                +how_item('img/ambassador/how-item-1.png', 'Inspiration', 'Our ambassadors get insider information about the brand, including key brand, messaging, and campaign messaging. We will have genuine, one-on-one conversations about our brand and how to promote it.')
             div(class="w-full sm:w-3/12").flex.flex-col.items-center
-                +how_item('../img/ambassador/how-item-2.png', 'Product', 'Our ambassadors receive Artistro products and get a chance to test new products before its launch on the market.')
+                +how_item('img/ambassador/how-item-2.png', 'Product', 'Our ambassadors receive Artistro products and get a chance to test new products before its launch on the market.')
             div(class="w-full sm:w-3/12").flex.flex-col.items-center
-                +how_item('../img/ambassador/how-item-3.png', 'Promotion', 'Our ambassadors give new customers a reason to trust Artistro by creating tutorials, artworks, and organizing other activities using our excellent product.')
+                +how_item('img/ambassador/how-item-3.png', 'Promotion', 'Our ambassadors give new customers a reason to trust Artistro by creating tutorials, artworks, and organizing other activities using our excellent product.')
 //- END how
