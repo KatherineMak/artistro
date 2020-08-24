@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Artistro Club Page</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <!--BEGIN out-->
+    <div class="out overflow-hidden">
+      <!--BEGIN header-->
+      <header>
+        <div class="py-2 px-4 sm:px-2 top bg-black">
+          <div class="container">
+            <div class="flex items-center text-white"><a class="sm:mr-20 mr-4 text-sm font-normal" href="#">Designed in USA</a><a class="sm:mr-20 flex items-center mr-4 text-sm font-normal" href="#"><svg class="icon icon-shipping mr-2 fill-current">
+                  <use xlink:href="img/sprite.svg#icon-shipping"></use>
+                </svg>Free shipping</a><a class="flex items-center text-sm font-normal" href="#"><svg class="icon icon-guarantee mr-2 fill-current">
+                  <use xlink:href="img/sprite.svg#icon-guarantee"></use>
+                </svg>365 day satisfaction guarantee</a></div>
+          </div>
+        </div>
+        <div class="middle bg-white p-4">
+          <div class="container">
+            <div class="justify-center flex flex-wrap items-center">
+              <div class="w-full sm:w-6/12">
+                <ul class="justify-around sm:justify-between flex">
+                  <li><a class="text-base font-normal" href="#">Shipping</a></li>
+                  <li><a class="text-base font-normal" href="#">FAQ</a></li>
+                  <li><a class="text-base font-normal" href="#">Contact Us</a></li>
+                  <li><a class="text-base font-normal" href="#">info@artistro.com</a></li>
+                </ul>
+              </div>
+              <div class="w-4/12">
+                <ul class="flex justify-end">
+                  <li class="pl-6"><a href="#"><svg class="icon icon-fb ">
+                        <use xlink:href="img/sprite.svg#icon-fb"></use>
+                      </svg></a></li>
+                  <li class="pl-6"><a href="#"><svg class="icon icon-insta ">
+                        <use xlink:href="img/sprite.svg#icon-insta"></use>
+                      </svg></a></li>
+                  <li class="pl-6"><a href="#"><svg class="icon icon-twitter ">
+                        <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                      </svg></a></li>
+                  <li class="pl-6"><a href="#"><svg class="icon icon-pinterest ">
+                        <use xlink:href="img/sprite.svg#icon-pinterest"></use>
+                      </svg></a></li>
+                  <li class="pl-6"><a href="#"><svg class="icon icon-youtube ">
+                        <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                      </svg></a></li>
+                  <li class="pl-6"><a href="#"><svg class="icon icon-tiktok ">
+                        <use xlink:href="img/sprite.svg#icon-tiktok"></use>
+                      </svg></a></li>
+                </ul>
+              </div>
+              <div class="w-2/12 flex items-center justify-end"><a class="mr-4" href="#">Login</a><svg class="icon icon-login ">
+                  <use xlink:href="img/sprite.svg#icon-login"></use>
+                </svg></div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom bg-lightPink pt-2">
+          <div class="container">
+            <div class="px-4 pb-2 sm:px-0 flex items-center">
+              <div class="w-2/12 flex items-center justify-between">
+                <div class="logo"><a href="#"><img class="object-contain" src="../img/images/logo.png" alt=""></a></div>
+              </div>
+              <div class="w-8/12 flex">
+                <nav class="hidden lg:block w-full pl-14">
+                  <ul class="flex items-center justify-around">
+                    <li class="pl-12"><a class="xl:text-xl text-base uppercase font-normal" href="#">Catalog</a></li>
+                    <li class="pl-12"><a class="xl:text-xl text-base uppercase font-normal" href="#">Tutorials</a></li>
+                    <li class="pl-12"><a class="xl:text-xl text-base uppercase font-normal" href="#">Insparation</a></li>
+                    <li class="pl-12"><a class="xl:text-xl text-base uppercase font-normal" href="#">Reviews</a></li>
+                    <li class="pl-12"><a class="xl:text-xl text-base uppercase font-normal" href="#">About Us</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="w-2/12">
+                <div class="actions flex justify-end w-full"><a class="text-3xl" href="#"><svg class="icon icon-search fill-current">
+                      <use xlink:href="img/sprite.svg#icon-search"></use>
+                    </svg></a><span class="border border-solid border-lightGray mx-8"> </span><a class="text-3xl" href="#"><svg class="icon icon-cart fill-current">
+                      <use xlink:href="img/sprite.svg#icon-cart"></use>
+                    </svg></a></div>
+              </div>
+              <div class="lg:hidden cursor-pointer ml-8 menu relative"><span class="block bg-black my-1"></span><span class="block bg-black my-1"></span><span class="block bg-black my-1"></span></div>
+            </div>
+          </div>
+        </div>
+        <div class="w-1/2 sm:w-1/4 menu-popup fixed h-full z-2 h-screen bg-white top-0 left-0 invisible">
+          <nav>
+            <ul class="flex flex-col mt-16">
+              <li class="pl-8 m-4"><a class="text-xl uppercase font-normal" href="#">Catalog</a></li>
+              <li class="pl-8 m-4"><a class="text-xl uppercase font-normal" href="#">Tutorials</a></li>
+              <li class="pl-8 m-4"><a class="text-xl uppercase font-normal" href="#">Insparation</a></li>
+              <li class="pl-8 m-4"><a class="text-xl uppercase font-normal" href="#">Reviews</a></li>
+              <li class="pl-8 m-4"><a class="text-xl uppercase font-normal" href="#">About Us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="menu-bg w-full h-full fixed left-0 top-0 z-2 bg-black opacity-25 hidden"></div>
+      <!--END header-->
+      <script>
+        $('.menu').click(function()
+        {
+          $('.menu-popup').toggleClass('active');
+          $('.menu-bg').fadeIn();
+        });
+        $('.menu-bg').click(function(e)
+        {
+          e.preventDefault();
+          $('.menu-popup').toggleClass('active');
+          $('.menu-bg').fadeOut();
+        });
+
+      </script>
+      <section class="bannerClub bg-lightPink relative">
+        <div class="md:block hidden bannerClub__decor absolute bg-contain bg-no-repeat left-0 z-0" style="background-image: url(../img/bg/decor-club.svg)"></div>
+        <div class="sm:px-0 container relative z-1 px-5">
+          <div class="md:flex-no-wrap flex flex-wrap">
+            <div class="w-full md:w-5/12 md:items-start flex flex-col items-center">
+              <h1 class="xl:mt-32 mt-24 font-mono text-black text-120px leading-none font-bold">Artistro Club</h1>
+              <p class="font-sans text-black text-base my-8">Join the Artistro Club and be rewarded 200 Art Coins</p>
+              <div class="w-8/12"><a class="flex justify-center bg-black text-white text-lg font-noto py-5 font-button uppercase w-full" href="#">Join now</a></div>
+            </div>
+            <div class="w-full md:w-6/12">
+              <div class="lg:flex lg:items-center bannerClub__img relative"><img class="md:pt-0 object-contain absolute top-0 pt-10" src="../img/club/club-banner.png" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="coins">
+        <div class="sm:px-0 container relative z-1 px-5">
+          <div class="sm:flex-no-wrap sm:justify-between flex justify-center py-12 flex-wrap items-stretch">
+            <div class="w-10/12 xs:w-7/12 sm:w-3/12 sm:mb-0 flex flex-col justify-between mb-10">
+              <div>
+                <h2 class="font-noto text-black text-2xl font-bold uppercase">Ways to earn</h2>
+                <p class="font-sans text-black text-base my-5">Follow, like, or share to earn even more Art Coins.It’s quick, easy, and a great value!</p>
+                <p class="flex items-center font-sans text-black text-tiny font-bold"><svg class="icon icon-share ">
+                    <use xlink:href="img/sprite.svg#icon-share"></use>
+                  </svg><span class="pl-2">Share on Facebook</span></p>
+                <p class="font-sans text-black text-tiny pl-5 pb-5">50 Art Coins</p>
+                <p class="flex items-center font-sans text-black text-tiny font-bold"><svg class="icon icon-like ">
+                    <use xlink:href="img/sprite.svg#icon-like"></use>
+                  </svg><span class="pl-2">Like on Facebook</span></p>
+                <p class="font-sans text-black text-tiny pl-5 pb-5">50 Art Coins</p>
+                <p class="flex items-center font-sans text-black text-tiny font-bold"><svg class="icon icon-insta ">
+                    <use xlink:href="img/sprite.svg#icon-insta"></use>
+                  </svg><span class="pl-2">Follow on instagram</span></p>
+                <p class="font-sans text-black text-tiny pl-5 pb-5">50 Art Coins</p>
+                <p class="flex items-center font-sans text-black text-tiny font-bold"><svg class="icon icon-cart ">
+                    <use xlink:href="img/sprite.svg#icon-cart"></use>
+                  </svg><span class="pl-2">Place an order</span></p>
+                <p class="font-sans text-black text-tiny pl-6 pb-5">50 Art Coins for every $1 spend</p>
+              </div><button class="w-full md:w-2/3 flex justify-center bg-black text-white text-lg font-noto py-5 font-button uppercase">Join now</button>
+            </div>
+            <div class="w-10/12 xs:w-7/12 sm:w-3/12 sm:mb-0 flex flex-col justify-between mb-10">
+              <div>
+                <h2 class="font-noto text-black text-2xl font-bold uppercase">Ways to spend</h2>
+                <p class="font-sans text-black text-base my-5">You earn points by purchasing art supplies: every dollar spent gains you Art Coins and rewards.</p>
+                <p class="flex items-center font-sans text-black text-tiny font-bold"><svg class="icon icon-coin ">
+                    <use xlink:href="img/sprite.svg#icon-coin"></use>
+                  </svg><span class="pl-2">$5 off discount</span></p>
+                <p class="font-sans text-black text-tiny pl-8 pb-5">500 Art Coins</p>
+                <p class="flex items-center font-sans text-black text-tiny font-bold"><svg class="icon icon-coin ">
+                    <use xlink:href="img/sprite.svg#icon-coin"></use>
+                  </svg><span class="pl-2">$5 off discount</span></p>
+                <p class="font-sans text-black text-tiny pl-8 pb-5">1000 Art Coins</p>
+                <p class="flex items-center font-sans text-black text-tiny font-bold"><svg class="icon icon-coin ">
+                    <use xlink:href="img/sprite.svg#icon-coin"></use>
+                  </svg><span class="pl-2">$5 off discount</span></p>
+                <p class="font-sans text-black text-tiny pl-8 pb-5">1500 Art Coins</p>
+                <p class="flex items-center font-sans text-black text-tiny font-bold"><svg class="icon icon-coin ">
+                    <use xlink:href="img/sprite.svg#icon-coin"></use>
+                  </svg><span class="pl-2">Order discount</span></p>
+                <p class="font-sans text-black text-tiny pl-8 pb-5">100 Art Coins = $1</p>
+              </div><button class="w-full md:w-2/3 flex justify-center bg-black text-white text-lg font-noto py-5 font-button uppercase">Join now</button>
+            </div>
+            <div class="w-10/12 xs:w-7/12 sm:w-3/12 flex flex-col justify-between">
+              <div>
+                <h2 class="font-noto text-black text-2xl font-bold uppercase">Referrals</h2>
+                <p class="font-sans text-black text-base my-5">Refer our website and give a discount to your friend and get more Art Coins!</p>
+                <p class="font-sans text-black text-base my-5">Give your friends a rewards and claim your own then make a purchase.</p>
+                <p class="flex items-center font-sans text-black text-tiny font-bold"><svg class="icon icon-coin ">
+                    <use xlink:href="img/sprite.svg#icon-coin"></use>
+                  </svg><span class="pl-2">They get</span></p>
+                <p class="font-sans text-black text-tiny pl-8 pb-5">$5 off discount</p>
+                <p class="flex items-center font-sans text-black text-tiny font-bold"><svg class="icon icon-coin ">
+                    <use xlink:href="img/sprite.svg#icon-coin"></use>
+                  </svg><span class="pl-2">You get</span></p>
+                <p class="font-sans text-black text-tiny pl-8 pb-5">$5 off discount</p>
+              </div><button class="w-full md:w-2/3 flex justify-center bg-black text-white text-lg font-noto py-5 font-button uppercase">Join now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="faq bg-lightPink relative py-20">
+        <div class="lg:block hidden faq__decor absolute bg-contain bg-no-repeat left-0 z-0" style="background-image: url(../img/bg/decor-tutorial.svg)"></div>
+        <div class="sm:px-0 container relative z-1 px-5">
+          <h2 class="mb-8 font-mono text-black text-120px leading-none font-bold">FAQ</h2>
+          <div class="flex flex-wrap justify-between">
+            <div class="w-full xs:w-2/4 xs:pr-4 pr-0 pb-4">
+              <div class="bg-white p-6 shadow-medium">
+                <p class="flex justify-between items-center text-black text-lg font-arial accordion">How do I sign up? Is it free to join the Club?<svg class="icon icon-arrow ">
+                    <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                  </svg></p>
+                <div class="panel opacity-0 cursor-pointer h-0 transition-all ease-in duration-700">
+                  <p class="font-sans text-base text-black pt-4 duration-75">Go to Rewards Program, log in under your email and check the Art Coins in a Rewards window in the right corner of the web site.</p>
+                </div>
+              </div>
+            </div>
+            <div class="w-full xs:w-2/4 pb-4">
+              <div class="bg-white p-6 shadow-medium">
+                <p class="flex justify-between items-center text-black text-lg font-arial accordion cursor-pointer">How do I spend my Art Coins?<svg class="icon icon-arrow ">
+                    <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                  </svg></p>
+                <div class="panel opacity-0 transition-all ease-in duration-700 cursor-pointer h-0">
+                  <p class="font-sans text-base text-black pt-4">Go to Rewards Program, log in under your email and check the Art Coins in a Rewards window in the right corner of the web site.</p>
+                </div>
+              </div>
+            </div>
+            <div class="w-full xs:w-2/4 xs:pr-4 pr-0 pb-4">
+              <div class="bg-white p-6 shadow-medium">
+                <p class="flex justify-between items-center text-black text-lg font-arial accordion cursor-pointer">How do I check my Art Coins?<svg class="icon icon-arrow ">
+                    <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                  </svg></p>
+                <div class="panel opacity-0 transition-all ease-in duration-700 cursor-pointer h-0">
+                  <p class="font-sans text-base text-black pt-4">Go to Rewards Program, log in under your email and check the Art Coins in a Rewards window in the right corner of the web site.</p>
+                </div>
+              </div>
+            </div>
+            <div class="w-full xs:w-2/4 pb-4">
+              <div class="bg-white p-6 shadow-medium">
+                <p class="flex justify-between items-center text-black text-lg font-arial accordion cursor-pointer">How do I earn Art Coins?<svg class="icon icon-arrow ">
+                    <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                  </svg></p>
+                <div class="panel opacity-0 transition-all ease-in duration-700 cursor-pointer h-0">
+                  <p class="font-sans text-base text-black pt-4">Go to Rewards Program, log in under your email and check the Art Coins in a Rewards</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        for (i = 0; i < acc.length; i++)
+        {
+          acc[i].addEventListener("click", function()
+          {
+            /* Toggle between adding and removing the "active" class,
+             to highlight the button that controls the panel */
+            this.classList.toggle("active");
+            /* Toggle between hiding and showing the active panel */
+            var panel = this.nextElementSibling;
+            if (panel.style.opacity === "1")
+            {
+              panel.style.opacity = "0";
+              panel.style.height = "0";
+              //panel.style.position = "absolute";
+            }
+            else
+            {
+              panel.style.opacity = "1";
+              panel.style.height = "100%";
+              //panel.style.position = "relative";
+            }
+          });
+        }
+
+      </script>
+      <section class="instagram relative z-1">
+        <div class="flex">
+          <div class="w-1/5"><img class="object-cover w-full h-full" src="../img/instagram/instagram-01.jpg" alt=""></div>
+          <div class="w-1/5"><img class="object-cover w-full h-full" src="../img/instagram/instagram-02.jpg" alt=""></div>
+          <div class="w-1/5 relative"><img class="object-cover w-full h-full" src="../img/instagram/instagram-03.png" alt="">
+            <div class="descr bg-white bg-opacity-75"><svg class="icon icon-big-inst fill-current text-black text-4xl">
+                <use xlink:href="img/sprite.svg#icon-big-inst"></use>
+              </svg>
+              <h4 class="xs:text-xl md:py-5 font-bold text-black text-base uppercase py-2">Follow instagram</h4>
+              <p class="sm:block lg:px-12 hidden font-normal text-black text-base px-2">Over 2 300 posts and over 90k followers</p>
+            </div>
+          </div>
+          <div class="w-1/5"><img class="object-cover w-full h-full" src="../img/instagram/instagram-04.jpg" alt=""></div>
+          <div class="w-1/5"><img class="object-cover w-full h-full" src="../img/instagram/instagram-05.jpg" alt=""></div>
+        </div>
+      </section>
+      <footer class="bg-black py-6 relative z-1">
+        <div class="container">
+          <div class="px-5 sm:px-0 flex flex-wrap">
+            <div class="w-full xs:w-1/2 md:w-1/4"><a class="footer__logo" href="#"><img class="object-contain" src="../img/footer/logo-footer.png" alt=""></a>
+              <ul class="flex justify-start py-6">
+                <li class="pr-6"><a href="#"><svg class="icon icon-fb ">
+                      <use xlink:href="img/sprite.svg#icon-fb"></use>
+                    </svg></a></li>
+                <li class="pr-6"><a href="#"><svg class="icon icon-insta ">
+                      <use xlink:href="img/sprite.svg#icon-insta"></use>
+                    </svg></a></li>
+                <li class="pr-6"><a href="#"><svg class="icon icon-twitter ">
+                      <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                    </svg></a></li>
+                <li class="pr-6"><a href="#"><svg class="icon icon-pinterest ">
+                      <use xlink:href="img/sprite.svg#icon-pinterest"></use>
+                    </svg></a></li>
+                <li class="pr-6"><a href="#"><svg class="icon icon-youtube ">
+                      <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                    </svg></a></li>
+                <li class="pr-6"><a href="#"><svg class="icon icon-tiktok ">
+                      <use xlink:href="img/sprite.svg#icon-tiktok"></use>
+                    </svg></a></li>
+              </ul>
+              <div class="copyright text-white text-sm opacity-75 font-light not-italic pb-6">
+                <p class="pb-6">© 2020 Artistro. All rights reserved.</p>
+                <div class="copyright__link"><a class="pr-5 underline" href="#">Terms of Service</a><a class="pr-5 underline" href="#">Privacy policy</a></div>
+              </div>
+            </div>
+            <div class="w-full xs:w-1/2 md:w-1/4 sm:pl-5">
+              <h3>Help</h3>
+              <ul class="footer__list">
+                <li> <a class="underline" href="#">info@artistro.com</a></li>
+                <li> <span>9906 67 Road</span></li>
+                <li> <span>Forest Hills, NY 11375 </span></li>
+              </ul>
+            </div>
+            <div class="w-full xs:w-1/2 md:w-1/4">
+              <h3>Info</h3>
+              <ul class="footer__list">
+                <li> <a href="#">Search</a></li>
+                <li> <a href="#">Privacy Policy</a></li>
+                <li> <a href="#">Refund Policy</a></li>
+                <li> <a href="#">Terms of Service</a></li>
+                <li> <a href="#">Shipping &amp; Delivery</a></li>
+              </ul>
+            </div>
+            <div class="w-full xs:w-1/2 md:w-1/4">
+              <h3>Let's Keep In Touch</h3>
+              <ul class="footer__list">
+                <li> <span>Subscribe to receive special offers,<br /> giveaways, and exclusive deals.</span></li>
+                <form class="w-full max-w-sm" action="post">
+                  <div class="flex items-center">
+                    <div class="w-7/12"><input class="text-sm" type="text" placeholder="Email"></div>
+                    <div class="w-5/12"><button>Sign Up</button></div>
+                  </div>
+                </form>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!--END out-->
+    <!--LOAD SCRIPTS-->
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>

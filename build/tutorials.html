@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tutorials Page</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <!--BEGIN out-->
+    <div class="out overflow-hidden">
+      <!--BEGIN header-->
+      <header>
+        <div class="py-2 px-4 sm:px-2 top bg-black">
+          <div class="container">
+            <div class="flex items-center text-white"><a class="sm:mr-20 mr-4 text-sm font-normal" href="#">Designed in USA</a><a class="sm:mr-20 flex items-center mr-4 text-sm font-normal" href="#"><svg class="icon icon-shipping mr-2 fill-current">
+                  <use xlink:href="img/sprite.svg#icon-shipping"></use>
+                </svg>Free shipping</a><a class="flex items-center text-sm font-normal" href="#"><svg class="icon icon-guarantee mr-2 fill-current">
+                  <use xlink:href="img/sprite.svg#icon-guarantee"></use>
+                </svg>365 day satisfaction guarantee</a></div>
+          </div>
+        </div>
+        <div class="middle bg-white p-4">
+          <div class="container">
+            <div class="justify-center flex flex-wrap items-center">
+              <div class="w-full sm:w-6/12">
+                <ul class="justify-around sm:justify-between flex">
+                  <li><a class="text-base font-normal" href="#">Shipping</a></li>
+                  <li><a class="text-base font-normal" href="#">FAQ</a></li>
+                  <li><a class="text-base font-normal" href="#">Contact Us</a></li>
+                  <li><a class="text-base font-normal" href="#">info@artistro.com</a></li>
+                </ul>
+              </div>
+              <div class="w-4/12">
+                <ul class="flex justify-end">
+                  <li class="pl-6"><a href="#"><svg class="icon icon-fb ">
+                        <use xlink:href="img/sprite.svg#icon-fb"></use>
+                      </svg></a></li>
+                  <li class="pl-6"><a href="#"><svg class="icon icon-insta ">
+                        <use xlink:href="img/sprite.svg#icon-insta"></use>
+                      </svg></a></li>
+                  <li class="pl-6"><a href="#"><svg class="icon icon-twitter ">
+                        <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                      </svg></a></li>
+                  <li class="pl-6"><a href="#"><svg class="icon icon-pinterest ">
+                        <use xlink:href="img/sprite.svg#icon-pinterest"></use>
+                      </svg></a></li>
+                  <li class="pl-6"><a href="#"><svg class="icon icon-youtube ">
+                        <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                      </svg></a></li>
+                  <li class="pl-6"><a href="#"><svg class="icon icon-tiktok ">
+                        <use xlink:href="img/sprite.svg#icon-tiktok"></use>
+                      </svg></a></li>
+                </ul>
+              </div>
+              <div class="w-2/12 flex items-center justify-end"><a class="mr-4" href="#">Login</a><svg class="icon icon-login ">
+                  <use xlink:href="img/sprite.svg#icon-login"></use>
+                </svg></div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom bg-lightPink pt-2">
+          <div class="container">
+            <div class="px-4 pb-2 sm:px-0 flex items-center">
+              <div class="w-2/12 flex items-center justify-between">
+                <div class="logo"><a href="#"><img class="object-contain" src="../img/images/logo.png" alt=""></a></div>
+              </div>
+              <div class="w-8/12 flex">
+                <nav class="hidden lg:block w-full pl-14">
+                  <ul class="flex items-center justify-around">
+                    <li class="pl-12"><a class="xl:text-xl text-base uppercase font-normal" href="#">Catalog</a></li>
+                    <li class="pl-12"><a class="xl:text-xl text-base uppercase font-normal" href="#">Tutorials</a></li>
+                    <li class="pl-12"><a class="xl:text-xl text-base uppercase font-normal" href="#">Insparation</a></li>
+                    <li class="pl-12"><a class="xl:text-xl text-base uppercase font-normal" href="#">Reviews</a></li>
+                    <li class="pl-12"><a class="xl:text-xl text-base uppercase font-normal" href="#">About Us</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="w-2/12">
+                <div class="actions flex justify-end w-full"><a class="text-3xl" href="#"><svg class="icon icon-search fill-current">
+                      <use xlink:href="img/sprite.svg#icon-search"></use>
+                    </svg></a><span class="border border-solid border-lightGray mx-8"> </span><a class="text-3xl" href="#"><svg class="icon icon-cart fill-current">
+                      <use xlink:href="img/sprite.svg#icon-cart"></use>
+                    </svg></a></div>
+              </div>
+              <div class="lg:hidden cursor-pointer ml-8 menu relative"><span class="block bg-black my-1"></span><span class="block bg-black my-1"></span><span class="block bg-black my-1"></span></div>
+            </div>
+          </div>
+        </div>
+        <div class="w-1/2 sm:w-1/4 menu-popup fixed h-full z-2 h-screen bg-white top-0 left-0 invisible">
+          <nav>
+            <ul class="flex flex-col mt-16">
+              <li class="pl-8 m-4"><a class="text-xl uppercase font-normal" href="#">Catalog</a></li>
+              <li class="pl-8 m-4"><a class="text-xl uppercase font-normal" href="#">Tutorials</a></li>
+              <li class="pl-8 m-4"><a class="text-xl uppercase font-normal" href="#">Insparation</a></li>
+              <li class="pl-8 m-4"><a class="text-xl uppercase font-normal" href="#">Reviews</a></li>
+              <li class="pl-8 m-4"><a class="text-xl uppercase font-normal" href="#">About Us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="menu-bg w-full h-full fixed left-0 top-0 z-2 bg-black opacity-25 hidden"></div>
+      <!--END header-->
+      <script>
+        $('.menu').click(function()
+        {
+          $('.menu-popup').toggleClass('active');
+          $('.menu-bg').fadeIn();
+        });
+        $('.menu-bg').click(function(e)
+        {
+          e.preventDefault();
+          $('.menu-popup').toggleClass('active');
+          $('.menu-bg').fadeOut();
+        });
+
+      </script>
+      <section class="tutorials-page relative overflow-hidden">
+        <div class="md:block hidden tutorials-page__decor__top absolute bg-contain bg-no-repeat left-0 z-0" style="background-image: url(../img/bg/decor.svg)"></div>
+        <div class="md:block hidden tutorials-page__decor__bottom absolute bg-contain bg-no-repeat left-0 z-0" style="background-image: url(../img/bg/decor-tutorial.svg)"></div>
+        <div class="md:px-0 container relative z-1 px-4">
+          <div class="pt-12 pb-8 flex justify-between items-end flex-wrap">
+            <div class="flex items-end">
+              <h1 class="font-mono font-bold text-90px uppercase leading-none">Tutorials</h1>
+              <p class="text-sans text-lg text-dull leading-normal font-bold mr-2 bg-beige rounded-large px-6 py-2 ml-4">Extra Fine Tips</p>
+            </div>
+            <div class="lg:mt-0 catalog__filters flex justify-between items-end mt-4">
+              <div class="catalog__filter flex items-center mr-12"><label class="text-sans text-lg text-black font-bold mr-2" for="category">Category:</label><select class="block appearance-none w-full bg-white text-sans text-lg text-black hover:border-gray-500 focus:outline-none focus:shadow-outline" id="category">
+                  <option>All Totorials</option>
+                  <option>All Totorials</option>
+                  <option>All Totorials</option>
+                </select></div>
+              <div class="catalog__filter flex items-center"><label class="text-sans text-lg text-black font-bold whitespace-no-wrap" for="sort-by">Sort by:</label><select class="block appearance-none w-full bg-white text-sans text-lg text-black hover:border-gray-500 focus:outline-none focus:shadow-outline" id="sort-by">
+                  <option>Popular</option>
+                  <option>Popular</option>
+                  <option>Popular</option>
+                </select></div>
+            </div>
+          </div>
+          <div class="flex shadow-normal">
+            <div class="md:w-8/12 xs:w-6/12 w-4/12">
+              <div class="tutorials-banner__img h-full"><img class="object-cover w-full h-full" src="../img/tutorials-page/tutorial-banner.png" alt="Tutorial banner"></div>
+            </div>
+            <div class="md:w-4/12 xs:w-6/12 w-8/12 py-5 px-8 flex flex-col justify-center bg-white">
+              <div class="data font-noto text-sm text-black font-normal flex justify-between items-center pb-6">
+                <div class="data__time flex items-center text-sm font-normal"><span class="pr-2"><svg class="icon icon-clock fill-current">
+                      <use xlink:href="img/sprite.svg#icon-clock"></use>
+                    </svg></span><span>Time to read:<b class="pl-2">5 min</b></span></div>
+                <div class="data__level flex items-center text-sm font-normal"><span class="pr-2"><svg class="icon icon-round-star fill-current">
+                      <use xlink:href="img/sprite.svg#icon-round-star"></use>
+                    </svg></span><span>Level:<b class="pl-2">Easy</b></span></div>
+              </div>
+              <h2 class="font-noto text-2xl text-black leading-normal font-bold uppercase mb-4">Easy guide 'How to draw' from Artistro!</h2>
+              <div class="tutorials__guide font-noto flex justify-between items-center pt-4"><span class="font-button text-base text-dull pr-3">Guide</span><a class="lg:px-8 flex justify-between items-center font-button text-white text-2x uppercase font-bold bg-black py-4 px-4" href="#">Read now<span class="pl-6 text-sm"><svg class="icon icon-arrow-more fill-current">
+                      <use xlink:href="img/sprite.svg#icon-arrow-more"></use>
+                    </svg></span></a></div>
+            </div>
+          </div>
+          <div class="xs:justify-between flex flex-wrap justify-center">
+            <div class="sm:mx-0 tutorials__item mt-6 mx-auto">
+              <div class="tutorials__img"><img src="../img/tutorials/tutorials-01.jpg" alt=""></div>
+              <div class="tutorials__descr p-8 relative shadow-normal z-1">
+                <div class="data font-noto text-sm text-black font-normal flex justify-between items-center py-6">
+                  <div class="data__time flex items-center text-sm font-normal"><span class="pr-2"><svg class="icon icon-clock fill-current">
+                        <use xlink:href="img/sprite.svg#icon-clock"></use>
+                      </svg></span><span>Time to read:<b>5 min</b></span></div>
+                  <div class="data__level flex items-center text-sm font-normal"><span class="pr-2"><svg class="icon icon-round-star fill-current">
+                        <use xlink:href="img/sprite.svg#icon-round-star"></use>
+                      </svg></span><span>Level:<b>Easy</b></span></div>
+                </div>
+                <div class="tutorials__title font-noto text-2xl text-black font-bold uppercase py-1">
+                  <h3>Easy guide 'How to draw' from Artistro!</h3>
+                </div>
+                <div class="tutorials__guide font-noto flex justify-between items-center py-4"><span class="font-button text-base text-grayThird">Guide</span><a class="flex justify-between items-center font-button text-2x uppercase font-bold" href="#">Read now<span class="pl-2"><svg class="icon icon-arrow-more fill-current">
+                        <use xlink:href="img/sprite.svg#icon-arrow-more"></use>
+                      </svg></span></a></div>
+              </div>
+            </div>
+            <div class="sm:mx-0 tutorials__item mt-6 mx-auto">
+              <div class="tutorials__img"><img src="../img/tutorials/tutorials-02.jpg" alt=""></div>
+              <div class="tutorials__descr p-8 relative shadow-normal z-1">
+                <div class="data font-noto text-sm text-black font-normal flex justify-between items-center py-6">
+                  <div class="data__time flex items-center text-sm font-normal"><span class="pr-2"><svg class="icon icon-clock fill-current">
+                        <use xlink:href="img/sprite.svg#icon-clock"></use>
+                      </svg></span><span>Time to read:<b>5 min</b></span></div>
+                  <div class="data__level flex items-center text-sm font-normal"><span class="pr-2"><svg class="icon icon-round-star fill-current">
+                        <use xlink:href="img/sprite.svg#icon-round-star"></use>
+                      </svg></span><span>Level:<b>Easy</b></span></div>
+                </div>
+                <div class="tutorials__title font-noto text-2xl text-black font-bold uppercase py-1">
+                  <h3>Easy guide 'How to draw' from Artistro!</h3>
+                </div>
+                <div class="tutorials__guide font-noto flex justify-between items-center py-4"><span class="font-button text-base text-grayThird">Guide</span><a class="flex justify-between items-center font-button text-2x uppercase font-bold" href="#">Read now<span class="pl-2"><svg class="icon icon-arrow-more fill-current">
+                        <use xlink:href="img/sprite.svg#icon-arrow-more"></use>
+                      </svg></span></a></div>
+              </div>
+            </div>
+            <div class="sm:mx-0 keep-in-touch mt-6 bg-beige relative overflow-hidden mx-auto">
+              <div class="keep-in-touch__img absolute z-0"><img class="object-contain" src="../img/tutorials-page/keep-in-touch.png" alt="Keep in touch"></div>
+              <form class="p-6 pt-32">
+                <h2 class="font-noto text-50px text-black font-bold uppercase py-2 leading-tight">Let's Keep In Touch</h2>
+                <p class="font-sans text-base text-black leading-relaxed mb-8">Subscribe to receive special offers, giveaways, and exclusive deals.</p><input class="font-sans text-base text-black leading-relaxed p-4 mb-6 bg-white w-full" placeholder="Your mail"><button class="flex justify-center items-center bg-black text-2x uppercase font-button font-bold w-full text-white p-4">Sign Up</button>
+              </form>
+            </div>
+            <div class="sm:mx-0 tutorials__item mt-6 mx-auto">
+              <div class="tutorials__img"><img src="../img/tutorials/tutorials-03.jpg" alt=""></div>
+              <div class="tutorials__descr p-8 relative shadow-normal z-1">
+                <div class="data font-noto text-sm text-black font-normal flex justify-between items-center py-6">
+                  <div class="data__time flex items-center text-sm font-normal"><span class="pr-2"><svg class="icon icon-clock fill-current">
+                        <use xlink:href="img/sprite.svg#icon-clock"></use>
+                      </svg></span><span>Time to read:<b>5 min</b></span></div>
+                  <div class="data__level flex items-center text-sm font-normal"><span class="pr-2"><svg class="icon icon-round-star fill-current">
+                        <use xlink:href="img/sprite.svg#icon-round-star"></use>
+                      </svg></span><span>Level:<b>Easy</b></span></div>
+                </div>
+                <div class="tutorials__title font-noto text-2xl text-black font-bold uppercase py-1">
+                  <h3>Easy guide 'How to draw' from Artistro!</h3>
+                </div>
+                <div class="tutorials__guide font-noto flex justify-between items-center py-4"><span class="font-button text-base text-grayThird">Guide</span><a class="flex justify-between items-center font-button text-2x uppercase font-bold" href="#">Read now<span class="pl-2"><svg class="icon icon-arrow-more fill-current">
+                        <use xlink:href="img/sprite.svg#icon-arrow-more"></use>
+                      </svg></span></a></div>
+              </div>
+            </div>
+            <div class="sm:mx-0 tutorials__item mt-6 mx-auto">
+              <div class="tutorials__img"><img src="../img/tutorials/tutorials-03.jpg" alt=""></div>
+              <div class="tutorials__descr p-8 relative shadow-normal z-1">
+                <div class="data font-noto text-sm text-black font-normal flex justify-between items-center py-6">
+                  <div class="data__time flex items-center text-sm font-normal"><span class="pr-2"><svg class="icon icon-clock fill-current">
+                        <use xlink:href="img/sprite.svg#icon-clock"></use>
+                      </svg></span><span>Time to read:<b>5 min</b></span></div>
+                  <div class="data__level flex items-center text-sm font-normal"><span class="pr-2"><svg class="icon icon-round-star fill-current">
+                        <use xlink:href="img/sprite.svg#icon-round-star"></use>
+                      </svg></span><span>Level:<b>Easy</b></span></div>
+                </div>
+                <div class="tutorials__title font-noto text-2xl text-black font-bold uppercase py-1">
+                  <h3>Easy guide 'How to draw' from Artistro!</h3>
+                </div>
+                <div class="tutorials__guide font-noto flex justify-between items-center py-4"><span class="font-button text-base text-grayThird">Guide</span><a class="flex justify-between items-center font-button text-2x uppercase font-bold" href="#">Read now<span class="pl-2"><svg class="icon icon-arrow-more fill-current">
+                        <use xlink:href="img/sprite.svg#icon-arrow-more"></use>
+                      </svg></span></a></div>
+              </div>
+            </div>
+            <div class="sm:mx-0 tutorials__item mt-6 mx-auto">
+              <div class="tutorials__img"><img src="../img/tutorials/tutorials-02.jpg" alt=""></div>
+              <div class="tutorials__descr p-8 relative shadow-normal z-1">
+                <div class="data font-noto text-sm text-black font-normal flex justify-between items-center py-6">
+                  <div class="data__time flex items-center text-sm font-normal"><span class="pr-2"><svg class="icon icon-clock fill-current">
+                        <use xlink:href="img/sprite.svg#icon-clock"></use>
+                      </svg></span><span>Time to read:<b>5 min</b></span></div>
+                  <div class="data__level flex items-center text-sm font-normal"><span class="pr-2"><svg class="icon icon-round-star fill-current">
+                        <use xlink:href="img/sprite.svg#icon-round-star"></use>
+                      </svg></span><span>Level:<b>Easy</b></span></div>
+                </div>
+                <div class="tutorials__title font-noto text-2xl text-black font-bold uppercase py-1">
+                  <h3>Easy guide 'How to draw' from Artistro!</h3>
+                </div>
+                <div class="tutorials__guide font-noto flex justify-between items-center py-4"><span class="font-button text-base text-grayThird">Guide</span><a class="flex justify-between items-center font-button text-2x uppercase font-bold" href="#">Read now<span class="pl-2"><svg class="icon icon-arrow-more fill-current">
+                        <use xlink:href="img/sprite.svg#icon-arrow-more"></use>
+                      </svg></span></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-center py-10">
+            <div class="w-full sm:w-3/5 flex justify-around font-mono text-50px text-gray font-bold"><button class="button-arrow border border-solid border-darkGray rounded-50 px-6 text-lg text-dull"><svg class="icon icon-arrow-left fill-current">
+                  <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+                </svg></button><button>1</button><button class="text-black">
+                <p>2</p>
+              </button><button>3</button><button>4</button><button>. . .</button><button>12</button><button class="button-arrow border border-solid border-darkGray rounded-50 px-6 text-lg text-dull"><svg class="icon icon-arrow-right fill-current">
+                  <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                </svg></button></div>
+          </div>
+        </div>
+      </section>
+      <footer class="bg-black py-6 relative z-1">
+        <div class="container">
+          <div class="px-5 sm:px-0 flex flex-wrap">
+            <div class="w-full xs:w-1/2 md:w-1/4"><a class="footer__logo" href="#"><img class="object-contain" src="../img/footer/logo-footer.png" alt=""></a>
+              <ul class="flex justify-start py-6">
+                <li class="pr-6"><a href="#"><svg class="icon icon-fb ">
+                      <use xlink:href="img/sprite.svg#icon-fb"></use>
+                    </svg></a></li>
+                <li class="pr-6"><a href="#"><svg class="icon icon-insta ">
+                      <use xlink:href="img/sprite.svg#icon-insta"></use>
+                    </svg></a></li>
+                <li class="pr-6"><a href="#"><svg class="icon icon-twitter ">
+                      <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                    </svg></a></li>
+                <li class="pr-6"><a href="#"><svg class="icon icon-pinterest ">
+                      <use xlink:href="img/sprite.svg#icon-pinterest"></use>
+                    </svg></a></li>
+                <li class="pr-6"><a href="#"><svg class="icon icon-youtube ">
+                      <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                    </svg></a></li>
+                <li class="pr-6"><a href="#"><svg class="icon icon-tiktok ">
+                      <use xlink:href="img/sprite.svg#icon-tiktok"></use>
+                    </svg></a></li>
+              </ul>
+              <div class="copyright text-white text-sm opacity-75 font-light not-italic pb-6">
+                <p class="pb-6">© 2020 Artistro. All rights reserved.</p>
+                <div class="copyright__link"><a class="pr-5 underline" href="#">Terms of Service</a><a class="pr-5 underline" href="#">Privacy policy</a></div>
+              </div>
+            </div>
+            <div class="w-full xs:w-1/2 md:w-1/4 sm:pl-5">
+              <h3>Help</h3>
+              <ul class="footer__list">
+                <li> <a class="underline" href="#">info@artistro.com</a></li>
+                <li> <span>9906 67 Road</span></li>
+                <li> <span>Forest Hills, NY 11375 </span></li>
+              </ul>
+            </div>
+            <div class="w-full xs:w-1/2 md:w-1/4">
+              <h3>Info</h3>
+              <ul class="footer__list">
+                <li> <a href="#">Search</a></li>
+                <li> <a href="#">Privacy Policy</a></li>
+                <li> <a href="#">Refund Policy</a></li>
+                <li> <a href="#">Terms of Service</a></li>
+                <li> <a href="#">Shipping &amp; Delivery</a></li>
+              </ul>
+            </div>
+            <div class="w-full xs:w-1/2 md:w-1/4">
+              <h3>Let's Keep In Touch</h3>
+              <ul class="footer__list">
+                <li> <span>Subscribe to receive special offers,<br /> giveaways, and exclusive deals.</span></li>
+                <form class="w-full max-w-sm" action="post">
+                  <div class="flex items-center">
+                    <div class="w-7/12"><input class="text-sm" type="text" placeholder="Email"></div>
+                    <div class="w-5/12"><button>Sign Up</button></div>
+                  </div>
+                </form>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!--END out-->
+    <!--LOAD SCRIPTS-->
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ambassador Page</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <!--BEGIN out-->
+    <div class="out overflow-hidden">
+      <!--BEGIN header-->
+      <header>
+        <div class="py-2 px-4 sm:px-2 top bg-black">
+          <div class="container">
+            <div class="flex items-center text-white"><a class="sm:mr-20 mr-4 text-sm font-normal" href="#">Designed in USA</a><a class="sm:mr-20 flex items-center mr-4 text-sm font-normal" href="#"><svg class="icon icon-shipping mr-2 fill-current">
+                  <use xlink:href="img/sprite.svg#icon-shipping"></use>
+                </svg>Free shipping</a><a class="flex items-center text-sm font-normal" href="#"><svg class="icon icon-guarantee mr-2 fill-current">
+                  <use xlink:href="img/sprite.svg#icon-guarantee"></use>
+                </svg>365 day satisfaction guarantee</a></div>
+          </div>
+        </div>
+        <div class="middle bg-white p-4">
+          <div class="container">
+            <div class="justify-center flex flex-wrap items-center">
+              <div class="w-full sm:w-6/12">
+                <ul class="justify-around sm:justify-between flex">
+                  <li><a class="text-base font-normal" href="#">Shipping</a></li>
+                  <li><a class="text-base font-normal" href="#">FAQ</a></li>
+                  <li><a class="text-base font-normal" href="#">Contact Us</a></li>
+                  <li><a class="text-base font-normal" href="#">info@artistro.com</a></li>
+                </ul>
+              </div>
+              <div class="w-4/12">
+                <ul class="flex justify-end">
+                  <li class="pl-6"><a href="#"><svg class="icon icon-fb ">
+                        <use xlink:href="img/sprite.svg#icon-fb"></use>
+                      </svg></a></li>
+                  <li class="pl-6"><a href="#"><svg class="icon icon-insta ">
+                        <use xlink:href="img/sprite.svg#icon-insta"></use>
+                      </svg></a></li>
+                  <li class="pl-6"><a href="#"><svg class="icon icon-twitter ">
+                        <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                      </svg></a></li>
+                  <li class="pl-6"><a href="#"><svg class="icon icon-pinterest ">
+                        <use xlink:href="img/sprite.svg#icon-pinterest"></use>
+                      </svg></a></li>
+                  <li class="pl-6"><a href="#"><svg class="icon icon-youtube ">
+                        <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                      </svg></a></li>
+                  <li class="pl-6"><a href="#"><svg class="icon icon-tiktok ">
+                        <use xlink:href="img/sprite.svg#icon-tiktok"></use>
+                      </svg></a></li>
+                </ul>
+              </div>
+              <div class="w-2/12 flex items-center justify-end"><a class="mr-4" href="#">Login</a><svg class="icon icon-login ">
+                  <use xlink:href="img/sprite.svg#icon-login"></use>
+                </svg></div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom bg-lightPink pt-2">
+          <div class="container">
+            <div class="px-4 pb-2 sm:px-0 flex items-center">
+              <div class="w-2/12 flex items-center justify-between">
+                <div class="logo"><a href="#"><img class="object-contain" src="../img/images/logo.png" alt=""></a></div>
+              </div>
+              <div class="w-8/12 flex">
+                <nav class="hidden lg:block w-full pl-14">
+                  <ul class="flex items-center justify-around">
+                    <li class="pl-12"><a class="xl:text-xl text-base uppercase font-normal" href="#">Catalog</a></li>
+                    <li class="pl-12"><a class="xl:text-xl text-base uppercase font-normal" href="#">Tutorials</a></li>
+                    <li class="pl-12"><a class="xl:text-xl text-base uppercase font-normal" href="#">Insparation</a></li>
+                    <li class="pl-12"><a class="xl:text-xl text-base uppercase font-normal" href="#">Reviews</a></li>
+                    <li class="pl-12"><a class="xl:text-xl text-base uppercase font-normal" href="#">About Us</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="w-2/12">
+                <div class="actions flex justify-end w-full"><a class="text-3xl" href="#"><svg class="icon icon-search fill-current">
+                      <use xlink:href="img/sprite.svg#icon-search"></use>
+                    </svg></a><span class="border border-solid border-lightGray mx-8"> </span><a class="text-3xl" href="#"><svg class="icon icon-cart fill-current">
+                      <use xlink:href="img/sprite.svg#icon-cart"></use>
+                    </svg></a></div>
+              </div>
+              <div class="lg:hidden cursor-pointer ml-8 menu relative"><span class="block bg-black my-1"></span><span class="block bg-black my-1"></span><span class="block bg-black my-1"></span></div>
+            </div>
+          </div>
+        </div>
+        <div class="w-1/2 sm:w-1/4 menu-popup fixed h-full z-2 h-screen bg-white top-0 left-0 invisible">
+          <nav>
+            <ul class="flex flex-col mt-16">
+              <li class="pl-8 m-4"><a class="text-xl uppercase font-normal" href="#">Catalog</a></li>
+              <li class="pl-8 m-4"><a class="text-xl uppercase font-normal" href="#">Tutorials</a></li>
+              <li class="pl-8 m-4"><a class="text-xl uppercase font-normal" href="#">Insparation</a></li>
+              <li class="pl-8 m-4"><a class="text-xl uppercase font-normal" href="#">Reviews</a></li>
+              <li class="pl-8 m-4"><a class="text-xl uppercase font-normal" href="#">About Us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="menu-bg w-full h-full fixed left-0 top-0 z-2 bg-black opacity-25 hidden"></div>
+      <!--END header-->
+      <script>
+        $('.menu').click(function()
+        {
+          $('.menu-popup').toggleClass('active');
+          $('.menu-bg').fadeIn();
+        });
+        $('.menu-bg').click(function(e)
+        {
+          e.preventDefault();
+          $('.menu-popup').toggleClass('active');
+          $('.menu-bg').fadeOut();
+        });
+
+      </script>
+      <section class="ambassadorAbout bg-lightPink relative pb-10">
+        <div class="lg:block hidden ambassadorAbout__decor absolute bg-contain bg-no-repeat left-0 z-0" style="background-image: url(../img/bg/decor.svg)"></div>
+        <div class="overflow-hidden">
+          <div class="sm:px-0 container relative z-1 px-5">
+            <div class="md:flex-no-wrap flex flex-wrap">
+              <div class="w-full md:w-6/12 xl:w-5/12">
+                <h1 class="sm:text-120px xl:text-10xl mt-10 font-mono text-black text-7xl leading-none font-bold">Artistro Ambassador Program</h1>
+                <div class="flex items-center my-6">
+                  <p class="font-sans text-black text-xl uppercase">Share</p>
+                  <ul class="xs:flex-no-wrap flex flex-wrap">
+                    <li class="flex justify-center items-center social-icon bg-yellow rounded-50 m-2"><a class="text-base" href="#"><svg class="icon icon-fb ">
+                          <use xlink:href="img/sprite.svg#icon-fb"></use>
+                        </svg></a></li>
+                    <li class="flex justify-center items-center social-icon bg-yellow rounded-50 m-2"><a class="text-base" href="#"><svg class="icon icon-insta ">
+                          <use xlink:href="img/sprite.svg#icon-insta"></use>
+                        </svg></a></li>
+                    <li class="flex justify-center items-center social-icon bg-yellow rounded-50 m-2"><a class="text-base" href="#"><svg class="icon icon-twitter ">
+                          <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                        </svg></a></li>
+                    <li class="flex justify-center items-center social-icon bg-yellow rounded-50 m-2"><a class="text-base" href="#"><svg class="icon icon-pinterest ">
+                          <use xlink:href="img/sprite.svg#icon-pinterest"></use>
+                        </svg></a></li>
+                    <li class="flex justify-center items-center social-icon bg-yellow rounded-50 m-2"><a class="text-base" href="#"><svg class="icon icon-youtube ">
+                          <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                        </svg></a></li>
+                    <li class="flex justify-center items-center social-icon bg-yellow rounded-50 m-2"><a class="text-base" href="#"><svg class="icon icon-tiktok ">
+                          <use xlink:href="img/sprite.svg#icon-tiktok"></use>
+                        </svg></a></li>
+                  </ul>
+                </div>
+                <div class="w-7/12 md:w-10/12 sm:mx-0 mx-auto"><a class="flex justify-center bg-black text-white text-lg font-noto py-5 font-button uppercase w-full mb-8" href="#">Join</a></div>
+              </div>
+              <div class="w-full md:w-7/12 md:mb-0 mb-6">
+                <div class="lg:flex lg:items-center ambassadorAbout__img relative"><img class="object-contain absolute top-0" src="../img/ambassador/ambassador.png" alt=""></div>
+              </div>
+            </div>
+            <div class="font-sans">
+              <p class="pb-3">You as an Artistro Ambassador are inspiring creators from around the world. You help us to keep our finger on the pulse of your communities and provide us with invaluable feedback so that we can improve and grow.</p>
+              <p class="pb-3"> Through Artistro Ambassador Program you receive tools and experiences, product to try out, a network of like-minded people, and support from us. Our relationship opens up the possibility to get up to big things together - to make a difference in artistic communities!</p>
+              <p class="pb-3"> You are not in just a partnership, you are an extension to the Artistro brand! You are the face of the brand!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="howWork relative overflow-hidden">
+        <div class="md:block hidden howWork__decor absolute bg-contain bg-no-repeat z-0" style="background-image: url(../img/bg/decor-offer.svg)"></div>
+        <div class="sm:px-0 container relative z-1 px-5">
+          <h2 class="mt-10 font-mono text-black text-90px leading-none font-bold">How we work together</h2>
+          <div class="sm:flex-no-wrap flex flex-wrap justify-between items-start my-16">
+            <div class="w-full sm:w-3/12 flex flex-col items-center items-center">
+              <div class="how__item flex flex-col"><img class="object-contain" src="../img/ambassador/how-item-1.png" alt="">
+                <h2 class="font-sans text-black uppercase font-bold text-xl my-6 text-center">Inspiration</h2>
+                <p class="font-sans text-black text-base text-center">Our ambassadors get insider information about the brand, including key brand, messaging, and campaign messaging. We will have genuine, one-on-one conversations about our brand and how to promote it.</p>
+              </div>
+            </div>
+            <div class="w-full sm:w-3/12 flex flex-col items-center">
+              <div class="how__item flex flex-col"><img class="object-contain" src="../img/ambassador/how-item-2.png" alt="">
+                <h2 class="font-sans text-black uppercase font-bold text-xl my-6 text-center">Product</h2>
+                <p class="font-sans text-black text-base text-center">Our ambassadors receive Artistro products and get a chance to test new products before its launch on the market.</p>
+              </div>
+            </div>
+            <div class="w-full sm:w-3/12 flex flex-col items-center">
+              <div class="how__item flex flex-col"><img class="object-contain" src="../img/ambassador/how-item-3.png" alt="">
+                <h2 class="font-sans text-black uppercase font-bold text-xl my-6 text-center">Promotion</h2>
+                <p class="font-sans text-black text-base text-center">Our ambassadors give new customers a reason to trust Artistro by creating tutorials, artworks, and organizing other activities using our excellent product.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="meet bg-lightPink relative">
+        <div class="xl:block hidden meet__decor absolute bg-contain bg-no-repeat z-0 right-0 z-0" style="background-image: url(../img/bg/decor-cart.svg)"></div>
+        <div class="sm:px-0 container py-12 relative z-1 px-5">
+          <h2 class="my-10 font-mono text-black text-90px leading-none font-bold">Meet our Ambassadors</h2>
+          <div class="xl:justify-between flex flex-wrap justify-around">
+            <div class="meet__item flex flex-col"><img class="my-6" src="../img/ambassador/meet-item-1.png" alt="">
+              <p class="flex items-center text-black font-sans text-tiny"><svg class="icon icon-insta ">
+                  <use xlink:href="img/sprite.svg#icon-insta"></use>
+                </svg><span class="text-black pl-2">@sweetpeachburns</span></p>
+              <h2 class="font-sans text-black text-xl my-3 font-bold">“The best ambassador programm”</h2>
+              <p class="text-dull font-sans text-base">Alaina Dawson</p>
+            </div>
+            <div class="meet__item flex flex-col"><img class="my-6" src="../img/ambassador/meet-item-2.png" alt="">
+              <p class="flex items-center text-black font-sans text-tiny"><svg class="icon icon-insta ">
+                  <use xlink:href="img/sprite.svg#icon-insta"></use>
+                </svg><span class="text-black pl-2">@sweetpeachburns</span></p>
+              <h2 class="font-sans text-black text-xl my-3 font-bold">“The best ambassador programm”</h2>
+              <p class="text-dull font-sans text-base">Alaina Dawson</p>
+            </div>
+            <div class="meet__item flex flex-col"><img class="my-6" src="../img/ambassador/meet-item-3.png" alt="">
+              <p class="flex items-center text-black font-sans text-tiny"><svg class="icon icon-insta ">
+                  <use xlink:href="img/sprite.svg#icon-insta"></use>
+                </svg><span class="text-black pl-2">@sweetpeachburns</span></p>
+              <h2 class="font-sans text-black text-xl my-3 font-bold">“The best ambassador programm”</h2>
+              <p class="text-dull font-sans text-base">Alaina Dawson</p>
+            </div>
+            <div class="meet__item flex flex-col"><img class="my-6" src="../img/ambassador/meet-item-4.png" alt="">
+              <p class="flex items-center text-black font-sans text-tiny"><svg class="icon icon-insta ">
+                  <use xlink:href="img/sprite.svg#icon-insta"></use>
+                </svg><span class="text-black pl-2">@sweetpeachburns</span></p>
+              <h2 class="font-sans text-black text-xl my-3 font-bold">“The best ambassador programm”</h2>
+              <p class="text-dull font-sans text-base">Alaina Dawson</p>
+            </div>
+            <div class="meet__item flex flex-col"><img class="my-6" src="../img/ambassador/meet-item-1.png" alt="">
+              <p class="flex items-center text-black font-sans text-tiny"><svg class="icon icon-insta ">
+                  <use xlink:href="img/sprite.svg#icon-insta"></use>
+                </svg><span class="text-black pl-2">@sweetpeachburns</span></p>
+              <h2 class="font-sans text-black text-xl my-3 font-bold">“The best ambassador programm”</h2>
+              <p class="text-dull font-sans text-base">Alaina Dawson</p>
+            </div>
+            <div class="meet__item flex flex-col"><img class="my-6" src="../img/ambassador/meet-item-2.png" alt="">
+              <p class="flex items-center text-black font-sans text-tiny"><svg class="icon icon-insta ">
+                  <use xlink:href="img/sprite.svg#icon-insta"></use>
+                </svg><span class="text-black pl-2">@sweetpeachburns</span></p>
+              <h2 class="font-sans text-black text-xl my-3 font-bold">“The best ambassador programm”</h2>
+              <p class="text-dull font-sans text-base">Alaina Dawson</p>
+            </div>
+            <div class="meet__item flex flex-col"><img class="my-6" src="../img/ambassador/meet-item-3.png" alt="">
+              <p class="flex items-center text-black font-sans text-tiny"><svg class="icon icon-insta ">
+                  <use xlink:href="img/sprite.svg#icon-insta"></use>
+                </svg><span class="text-black pl-2">@sweetpeachburns</span></p>
+              <h2 class="font-sans text-black text-xl my-3 font-bold">“The best ambassador programm”</h2>
+              <p class="text-dull font-sans text-base">Alaina Dawson</p>
+            </div>
+            <div class="meet__item flex flex-col"><img class="my-6" src="../img/ambassador/meet-item-4.png" alt="">
+              <p class="flex items-center text-black font-sans text-tiny"><svg class="icon icon-insta ">
+                  <use xlink:href="img/sprite.svg#icon-insta"></use>
+                </svg><span class="text-black pl-2">@sweetpeachburns</span></p>
+              <h2 class="font-sans text-black text-xl my-3 font-bold">“The best ambassador programm”</h2>
+              <p class="text-dull font-sans text-base">Alaina Dawson</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="become relative overflow-hidden bg-blueChoose">
+        <div class="md:block hidden become__decor absolute bg-contain bg-no-repeat left-0 z-0" style="background-image: url(../img/bg/decor-tutorial.svg)"></div>
+        <div class="sm:px-0 container relative z-1 px-5">
+          <h2 class="my-10 font-mono text-black text-90px leading-none font-bold">Become an Ambassador</h2>
+          <div class="sm:flex-no-wrap flex flex-wrap justify-between font-sans text-black">
+            <div class="w-1/2 sm:w-2/12 sm:pr-0 pr-3">
+              <p class="text-6xl pb-3"><svg class="icon icon-18 ">
+                  <use xlink:href="img/sprite.svg#icon-18"></use>
+                </svg></p>
+              <p class="text-black text-base">They should be older than 18 years old.</p>
+            </div>
+            <div class="w-1/2 sm:w-3/12 sm:pb-0 pb-3">
+              <p class="text-6xl pb-3"><svg class="icon icon-earth ">
+                  <use xlink:href="img/sprite.svg#icon-earth"></use>
+                </svg></p>
+              <p class="text-black text-base">They should be from one of these countries: the United States, the United Kingdom, Canada, Australia, Germany, France, Spain, Italy, or the Netherlands.</p>
+            </div>
+            <div class="w-1/2 sm:w-4/12 sm:pr-0 pr-3">
+              <p class="text-6xl pb-3"><svg class="icon icon-communication ">
+                  <use xlink:href="img/sprite.svg#icon-communication"></use>
+                </svg></p>
+              <p class="text-black text-base">They should know the social media tools and assist in content creating, therefore, they should have an established online presence (YouTube, Instagram, TikTok and etc) with a high engagement rate.</p>
+            </div>
+            <div class="w-1/2 sm:w-2/12">
+              <p class="text-6xl pb-3"><svg class="icon icon-teach ">
+                  <use xlink:href="img/sprite.svg#icon-teach"></use>
+                </svg></p>
+              <p class="text-black text-base">They should have a large network and work/have a hobby in a sphere of art-creating/crafting.</p>
+            </div>
+          </div>
+          <form class="my-10">
+            <p class="text-sm text-black font-sans pb-3">Choose your country</p>
+            <div class="sm:flex-no-wrap flex flex-wrap">
+              <div class="w-1/2 sm:w-1/4 sm:pb-0 pr-2 pb-4"><input class="bg-white w-full p-4 shadow-medium" placeholder="Full Name"></div>
+              <div class="w-1/2 sm:w-1/4 sm:px-2"><input class="bg-white w-full p-4 shadow-medium" placeholder="Date of birth"></div>
+              <div class="w-1/2 sm:w-1/4 sm:px-2 pr-2"><input class="bg-white w-full p-4 shadow-medium" placeholder="Email"></div>
+              <div class="w-1/2 sm:w-1/4 sm:pl-2"><input class="bg-white w-full p-4 shadow-medium" placeholder="Where do you live?"></div>
+            </div><textarea class="bg-white w-full p-4 shadow-medium mt-4" placeholder="Links to your social media accounts IG, FB, Tik Tok, YouTube, Pinterest" rows="3"></textarea><textarea class="bg-white w-full p-4 shadow-medium mt-4" placeholder="How would you describe what you do as art?" rows="3"></textarea><textarea class="bg-white w-full p-4 shadow-medium mt-4" placeholder="Which art media do you use while creating?" rows="3"></textarea><textarea class="bg-white w-full p-4 shadow-medium mt-4" placeholder="Have you ever tried acrylic markers? If, yes, please specify the brand" rows="3"></textarea><textarea class="bg-white w-full p-4 shadow-medium mt-4" placeholder="Have you ever tried Artistro paint pens? If no, which ones would you like to try? " rows="3"></textarea>
+            <div class="flex mt-4">
+              <div class="w-4/12 mr-8"><button class="flex justify-center bg-black text-white text-lg font-sans py-4 w-full font-button uppercase">Submit</button></div>
+              <div class="w-8/12 sm:w-5/12 flex items-center">
+                <p class="font-sans text-black text-sm">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности</p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="instagram relative z-1">
+        <div class="flex">
+          <div class="w-1/5"><img class="object-cover w-full h-full" src="../img/instagram/instagram-01.jpg" alt=""></div>
+          <div class="w-1/5"><img class="object-cover w-full h-full" src="../img/instagram/instagram-02.jpg" alt=""></div>
+          <div class="w-1/5 relative"><img class="object-cover w-full h-full" src="../img/instagram/instagram-03.png" alt="">
+            <div class="descr bg-white bg-opacity-75"><svg class="icon icon-big-inst fill-current text-black text-4xl">
+                <use xlink:href="img/sprite.svg#icon-big-inst"></use>
+              </svg>
+              <h4 class="xs:text-xl md:py-5 font-bold text-black text-base uppercase py-2">Follow instagram</h4>
+              <p class="sm:block lg:px-12 hidden font-normal text-black text-base px-2">Over 2 300 posts and over 90k followers</p>
+            </div>
+          </div>
+          <div class="w-1/5"><img class="object-cover w-full h-full" src="../img/instagram/instagram-04.jpg" alt=""></div>
+          <div class="w-1/5"><img class="object-cover w-full h-full" src="../img/instagram/instagram-05.jpg" alt=""></div>
+        </div>
+      </section>
+      <footer class="bg-black py-6 relative z-1">
+        <div class="container">
+          <div class="px-5 sm:px-0 flex flex-wrap">
+            <div class="w-full xs:w-1/2 md:w-1/4"><a class="footer__logo" href="#"><img class="object-contain" src="../img/footer/logo-footer.png" alt=""></a>
+              <ul class="flex justify-start py-6">
+                <li class="pr-6"><a href="#"><svg class="icon icon-fb ">
+                      <use xlink:href="img/sprite.svg#icon-fb"></use>
+                    </svg></a></li>
+                <li class="pr-6"><a href="#"><svg class="icon icon-insta ">
+                      <use xlink:href="img/sprite.svg#icon-insta"></use>
+                    </svg></a></li>
+                <li class="pr-6"><a href="#"><svg class="icon icon-twitter ">
+                      <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                    </svg></a></li>
+                <li class="pr-6"><a href="#"><svg class="icon icon-pinterest ">
+                      <use xlink:href="img/sprite.svg#icon-pinterest"></use>
+                    </svg></a></li>
+                <li class="pr-6"><a href="#"><svg class="icon icon-youtube ">
+                      <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                    </svg></a></li>
+                <li class="pr-6"><a href="#"><svg class="icon icon-tiktok ">
+                      <use xlink:href="img/sprite.svg#icon-tiktok"></use>
+                    </svg></a></li>
+              </ul>
+              <div class="copyright text-white text-sm opacity-75 font-light not-italic pb-6">
+                <p class="pb-6">© 2020 Artistro. All rights reserved.</p>
+                <div class="copyright__link"><a class="pr-5 underline" href="#">Terms of Service</a><a class="pr-5 underline" href="#">Privacy policy</a></div>
+              </div>
+            </div>
+            <div class="w-full xs:w-1/2 md:w-1/4 sm:pl-5">
+              <h3>Help</h3>
+              <ul class="footer__list">
+                <li> <a class="underline" href="#">info@artistro.com</a></li>
+                <li> <span>9906 67 Road</span></li>
+                <li> <span>Forest Hills, NY 11375 </span></li>
+              </ul>
+            </div>
+            <div class="w-full xs:w-1/2 md:w-1/4">
+              <h3>Info</h3>
+              <ul class="footer__list">
+                <li> <a href="#">Search</a></li>
+                <li> <a href="#">Privacy Policy</a></li>
+                <li> <a href="#">Refund Policy</a></li>
+                <li> <a href="#">Terms of Service</a></li>
+                <li> <a href="#">Shipping &amp; Delivery</a></li>
+              </ul>
+            </div>
+            <div class="w-full xs:w-1/2 md:w-1/4">
+              <h3>Let's Keep In Touch</h3>
+              <ul class="footer__list">
+                <li> <span>Subscribe to receive special offers,<br /> giveaways, and exclusive deals.</span></li>
+                <form class="w-full max-w-sm" action="post">
+                  <div class="flex items-center">
+                    <div class="w-7/12"><input class="text-sm" type="text" placeholder="Email"></div>
+                    <div class="w-5/12"><button>Sign Up</button></div>
+                  </div>
+                </form>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!--END out-->
+    <!--LOAD SCRIPTS-->
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>

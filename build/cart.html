@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cart Page</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <!--BEGIN out-->
+    <div class="out overflow-hidden">
+      <!--BEGIN header-->
+      <header>
+        <div class="py-2 px-4 sm:px-2 top bg-black">
+          <div class="container">
+            <div class="flex items-center text-white"><a class="sm:mr-20 mr-4 text-sm font-normal" href="#">Designed in USA</a><a class="sm:mr-20 flex items-center mr-4 text-sm font-normal" href="#"><svg class="icon icon-shipping mr-2 fill-current">
+                  <use xlink:href="img/sprite.svg#icon-shipping"></use>
+                </svg>Free shipping</a><a class="flex items-center text-sm font-normal" href="#"><svg class="icon icon-guarantee mr-2 fill-current">
+                  <use xlink:href="img/sprite.svg#icon-guarantee"></use>
+                </svg>365 day satisfaction guarantee</a></div>
+          </div>
+        </div>
+        <div class="middle bg-white p-4">
+          <div class="container">
+            <div class="justify-center flex flex-wrap items-center">
+              <div class="w-full sm:w-6/12">
+                <ul class="justify-around sm:justify-between flex">
+                  <li><a class="text-base font-normal" href="#">Shipping</a></li>
+                  <li><a class="text-base font-normal" href="#">FAQ</a></li>
+                  <li><a class="text-base font-normal" href="#">Contact Us</a></li>
+                  <li><a class="text-base font-normal" href="#">info@artistro.com</a></li>
+                </ul>
+              </div>
+              <div class="w-4/12">
+                <ul class="flex justify-end">
+                  <li class="pl-6"><a href="#"><svg class="icon icon-fb ">
+                        <use xlink:href="img/sprite.svg#icon-fb"></use>
+                      </svg></a></li>
+                  <li class="pl-6"><a href="#"><svg class="icon icon-insta ">
+                        <use xlink:href="img/sprite.svg#icon-insta"></use>
+                      </svg></a></li>
+                  <li class="pl-6"><a href="#"><svg class="icon icon-twitter ">
+                        <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                      </svg></a></li>
+                  <li class="pl-6"><a href="#"><svg class="icon icon-pinterest ">
+                        <use xlink:href="img/sprite.svg#icon-pinterest"></use>
+                      </svg></a></li>
+                  <li class="pl-6"><a href="#"><svg class="icon icon-youtube ">
+                        <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                      </svg></a></li>
+                  <li class="pl-6"><a href="#"><svg class="icon icon-tiktok ">
+                        <use xlink:href="img/sprite.svg#icon-tiktok"></use>
+                      </svg></a></li>
+                </ul>
+              </div>
+              <div class="w-2/12 flex items-center justify-end"><a class="mr-4" href="#">Login</a><svg class="icon icon-login ">
+                  <use xlink:href="img/sprite.svg#icon-login"></use>
+                </svg></div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom bg-lightPink pt-2">
+          <div class="container">
+            <div class="px-4 pb-2 sm:px-0 flex items-center">
+              <div class="w-2/12 flex items-center justify-between">
+                <div class="logo"><a href="#"><img class="object-contain" src="../img/images/logo.png" alt=""></a></div>
+              </div>
+              <div class="w-8/12 flex">
+                <nav class="hidden lg:block w-full pl-14">
+                  <ul class="flex items-center justify-around">
+                    <li class="pl-12"><a class="xl:text-xl text-base uppercase font-normal" href="#">Catalog</a></li>
+                    <li class="pl-12"><a class="xl:text-xl text-base uppercase font-normal" href="#">Tutorials</a></li>
+                    <li class="pl-12"><a class="xl:text-xl text-base uppercase font-normal" href="#">Insparation</a></li>
+                    <li class="pl-12"><a class="xl:text-xl text-base uppercase font-normal" href="#">Reviews</a></li>
+                    <li class="pl-12"><a class="xl:text-xl text-base uppercase font-normal" href="#">About Us</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="w-2/12">
+                <div class="actions flex justify-end w-full"><a class="text-3xl" href="#"><svg class="icon icon-search fill-current">
+                      <use xlink:href="img/sprite.svg#icon-search"></use>
+                    </svg></a><span class="border border-solid border-lightGray mx-8"> </span><a class="text-3xl" href="#"><svg class="icon icon-cart fill-current">
+                      <use xlink:href="img/sprite.svg#icon-cart"></use>
+                    </svg></a></div>
+              </div>
+              <div class="lg:hidden cursor-pointer ml-8 menu relative"><span class="block bg-black my-1"></span><span class="block bg-black my-1"></span><span class="block bg-black my-1"></span></div>
+            </div>
+          </div>
+        </div>
+        <div class="w-1/2 sm:w-1/4 menu-popup fixed h-full z-2 h-screen bg-white top-0 left-0 invisible">
+          <nav>
+            <ul class="flex flex-col mt-16">
+              <li class="pl-8 m-4"><a class="text-xl uppercase font-normal" href="#">Catalog</a></li>
+              <li class="pl-8 m-4"><a class="text-xl uppercase font-normal" href="#">Tutorials</a></li>
+              <li class="pl-8 m-4"><a class="text-xl uppercase font-normal" href="#">Insparation</a></li>
+              <li class="pl-8 m-4"><a class="text-xl uppercase font-normal" href="#">Reviews</a></li>
+              <li class="pl-8 m-4"><a class="text-xl uppercase font-normal" href="#">About Us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="menu-bg w-full h-full fixed left-0 top-0 z-2 bg-black opacity-25 hidden"></div>
+      <!--END header-->
+      <script>
+        $('.menu').click(function()
+        {
+          $('.menu-popup').toggleClass('active');
+          $('.menu-bg').fadeIn();
+        });
+        $('.menu-bg').click(function(e)
+        {
+          e.preventDefault();
+          $('.menu-popup').toggleClass('active');
+          $('.menu-bg').fadeOut();
+        });
+
+      </script>
+      <div class="overflow-hidden">
+        <section class="cart relative pb-8">
+          <div class="container relative z-1">
+            <div class="flex flex-wrap">
+              <div class="w-full md:w-8/12 sm:px-0 px-5">
+                <div class="pt-12 pb-8">
+                  <h1 class="font-mono font-bold text-9xl uppercase leading-none">Cart</h1>
+                </div>
+                <p class="font-sans text-lg leading-none mb-5">You have <b> 3 item(s)</b> in your cart:</p>
+                <div class="xs:flex-no-wrap cart-item flex flex-wrap border border-solid border-lightGray p-4 items-center cursor-pointer bg-white justify-center">
+                  <div class="flex items-center"><img src="../img/cart/cart-item.png" alt="">
+                    <p class="
+            font-sans
+            text-tiny
+            leading-snug
+
+            px-4
+            ">Paint pens for rock painting, stone and metal. Set of 15 permanent paint markers</p>
+                  </div>
+                  <div class="
+        flex
+        flex-col
+        pr-4
+        ">
+                    <h3 class="font-sans font-bold text-xs uppercase leading-snug text-dull">Sale:</h3>
+                    <p class="font-sans line-through font-light text-base text-dull">$25,95</p>
+                  </div>
+                  <div class="
+        flex
+        flex-col
+        pr-4
+        ">
+                    <h3 class="font-sans font-bold text-xs uppercase leading-snug text-dull">Price:</h3>
+                    <p class="font-sans font-bold text-base">$19,95</p>
+                  </div>
+                  <div class="
+        flex
+        border
+        border-solid
+        border-lightGray
+        p-1
+        cart-item__btns
+        "><button class="px-4 py-2 border-r border-solid border-lightGray text-gray text-xxs"><svg class="icon icon-minus fill-current">
+                        <use xlink:href="img/sprite.svg#icon-minus"></use>
+                      </svg></button><span class="font-sans font-bold text-xl leading-none text-dull px-5 py-4">1</span><button class="px-4 py-2 border-l border-solid border-lightGray is-active"><svg class="icon icon-plus fill-current">
+                        <use xlink:href="img/sprite.svg#icon-plus"></use>
+                      </svg></button></div><button class="ml-4 text-gray"><svg class="icon icon-close fill-current">
+                      <use xlink:href="img/sprite.svg#icon-close"></use>
+                    </svg></button>
+                </div>
+                <div class="xs:flex-no-wrap cart-item flex flex-wrap border border-solid border-lightGray p-4 items-center cursor-pointer bg-white justify-center">
+                  <div class="flex items-center"><img src="../img/cart/cart-item.png" alt="">
+                    <p class="
+            font-sans
+            text-tiny
+            leading-snug
+
+            px-4
+            ">Paint pens for rock painting, stone and metal. Set of 15 permanent paint markers</p>
+                  </div>
+                  <div class="
+        flex
+        flex-col
+        pr-4
+        ">
+                    <h3 class="font-sans font-bold text-xs uppercase leading-snug text-dull">Sale:</h3>
+                    <p class="font-sans line-through font-light text-base text-dull">$25,95</p>
+                  </div>
+                  <div class="
+        flex
+        flex-col
+        pr-4
+        ">
+                    <h3 class="font-sans font-bold text-xs uppercase leading-snug text-dull">Price:</h3>
+                    <p class="font-sans font-bold text-base">$19,95</p>
+                  </div>
+                  <div class="
+        flex
+        border
+        border-solid
+        border-lightGray
+        p-1
+        cart-item__btns
+        "><button class="px-4 py-2 border-r border-solid border-lightGray text-gray text-xxs"><svg class="icon icon-minus fill-current">
+                        <use xlink:href="img/sprite.svg#icon-minus"></use>
+                      </svg></button><span class="font-sans font-bold text-xl leading-none text-dull px-5 py-4">1</span><button class="px-4 py-2 border-l border-solid border-lightGray is-active"><svg class="icon icon-plus fill-current">
+                        <use xlink:href="img/sprite.svg#icon-plus"></use>
+                      </svg></button></div><button class="ml-4 text-gray"><svg class="icon icon-close fill-current">
+                      <use xlink:href="img/sprite.svg#icon-close"></use>
+                    </svg></button>
+                </div>
+                <div class="xs:flex-no-wrap cart-item flex flex-wrap border border-solid border-lightGray p-4 items-center cursor-pointer bg-white justify-center">
+                  <div class="flex items-center"><img src="../img/cart/cart-item.png" alt="">
+                    <p class="
+            font-sans
+            text-tiny
+            leading-snug
+
+            px-4
+            ">Paint pens for rock painting, stone and metal. Set of 15 permanent paint markers</p>
+                  </div>
+                  <div class="
+        flex
+        flex-col
+        pr-4
+        ">
+                    <h3 class="font-sans font-bold text-xs uppercase leading-snug text-dull">Sale:</h3>
+                    <p class="font-sans line-through font-light text-base text-dull">$25,95</p>
+                  </div>
+                  <div class="
+        flex
+        flex-col
+        pr-4
+        ">
+                    <h3 class="font-sans font-bold text-xs uppercase leading-snug text-dull">Price:</h3>
+                    <p class="font-sans font-bold text-base">$19,95</p>
+                  </div>
+                  <div class="
+        flex
+        border
+        border-solid
+        border-lightGray
+        p-1
+        cart-item__btns
+        "><button class="px-4 py-2 border-r border-solid border-lightGray text-gray text-xxs"><svg class="icon icon-minus fill-current">
+                        <use xlink:href="img/sprite.svg#icon-minus"></use>
+                      </svg></button><span class="font-sans font-bold text-xl leading-none text-dull px-5 py-4">1</span><button class="px-4 py-2 border-l border-solid border-lightGray is-active"><svg class="icon icon-plus fill-current">
+                        <use xlink:href="img/sprite.svg#icon-plus"></use>
+                      </svg></button></div><button class="ml-4 text-gray"><svg class="icon icon-close fill-current">
+                      <use xlink:href="img/sprite.svg#icon-close"></use>
+                    </svg></button>
+                </div>
+                <p class="font-sans text-lg leading-none mt-8 mb-5">Include any notes or special instructions for yor order:</p><textarea class="border border-solid border-lightGray p-4 resize-none w-full" placeholder="Аny notes..." rows="3"></textarea>
+              </div>
+              <div class="w-4/5 md:w-4/12 md:mt-0 flex items-end mx-auto mt-5">
+                <div class="lg:ml-8 bg-lightPink ml-4">
+                  <h3 class="font-sans text-2xl leading-tight pt-6 mb-2 pl-8">Subtotal:<span class="lg:text-40px text-3xl leading-relaxed ml-4">$19,95</span></h3>
+                  <hr class="border-t-2 border-light">
+                  <form class="lg:p-8 p-6"><label class="text-xs mb-4" for="country">Choose your country</label><select class="bg-white my-4 p-3 w-full text-sans text-sm text-dull hover:border-gray-500 focus:outline-none focus:shadow-outline" id="country">
+                      <option>United States</option>
+                      <option>United States</option>
+                      <option>United States</option>
+                    </select><label class="text-xs mb-4" for="state">Choose your state</label><select class="bg-white my-4 p-3 w-full text-sans text-sm text-dull hover:border-gray-500 focus:outline-none focus:shadow-outline" id="state">
+                      <option>Alabama</option>
+                      <option>Alabama</option>
+                      <option>Alabama</option>
+                    </select><label class="text-xs mb-4" for="postal">Your postal code</label><input class="mt-4 mb-6 p-3 w-full text-sans text-sm text-dull" id="postal" placeholder="ew453435636"><button class="border border-solid border-black uppercase font-bold text-sans w-full mb-6 text-tiny bg-transparent h-12 text-black">calculate shipping rates</button><button class="text-sans text-white bg-black uppercase font-bold w-full text-tiny h-12">checkout</button></form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="recommendation relative py-12 bg-blueChoose">
+          <div class="md:block hidden recommendation__decor__top absolute bg-contain bg-no-repeat right-0 z-0" style="background-image: url(../img/bg/decor-cart.svg)"></div>
+          <div class="md:block hidden recommendation__decor__bottom absolute bg-contain bg-no-repeat left-0" style="background-image: url(../img/bg/decor-tutorial.svg)"></div>
+          <div class="sm:p-0 container px-5">
+            <div class="swiper-container recommendation__slider relative">
+              <div class="py-16">
+                <h2 class="w-2/3 lg:w-full text-90px font-mono font-bold leading-none">You may also be interested in...</h2>
+              </div>
+              <div class="swiper__button recommendation__btn absolute flex p-4 items-center right-0"><button class="sm:text-4xl sm:p-4 button-next p-2 duration-700 ease-in-out cursor-pointer text-3xl"><svg class="icon icon-arrow-left fill-current">
+                    <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+                  </svg></button><button class="sm:text-4xl sm:p-4 button-prev p-2 duration-700 ease-in-out cursor-pointer text-3xl"><svg class="icon icon-arrow-right fill-current">
+                    <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                  </svg></button></div>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="product__item bg-white delay-150 mx-auto">
+                    <div class="product__img"><img src="../img/popular/popular_products.png" alt=""></div>
+                    <div class="product__descr relative p-4">
+                      <div class="
+            product__reviews
+            flex justify-start items-center
+            ">
+                        <ul class="flex justify-start">
+                          <li><span><svg class="icon icon-star fill-current text-yellowIcon">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                              </svg></span></li>
+                          <li><span><svg class="icon icon-star fill-current text-yellowIcon">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                              </svg></span></li>
+                          <li><span><svg class="icon icon-star fill-current text-yellowIcon">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                              </svg></span></li>
+                          <li><span><svg class="icon icon-star fill-current text-yellowIcon">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                              </svg></span></li>
+                          <li><span><svg class="icon icon-star fill-current text-yellowIcon">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                              </svg></span></li>
+                        </ul><a class="
+
+                text-sm text-dull
+                pl-3
+                underline
+                " href="#">266 reviews</a>
+                      </div>
+                      <h3 class="text-black py-5 text-xl font-semibold">Trending Collars</h3>
+                      <p class="text-dull text-base py-2">15 Amazing colors, Sturdy tips, Smooth application</p>
+                      <div class="product_price"><span class="new text-black text-xl font-bold mr-6">$19,95</span><span class="old line-through font-light text-xl text-dull">$25,95</span></div>
+                      <div class="
+            product_btn
+            py-6
+            duration-700 ease-in-out
+            w-full
+            bg-white
+            absolute
+            flex justify-center
+            opacity-0"><a class="
+                btn-white
+                flex items-center justify-center
+                bg-white
+                text-black text-sm
+                w-full
+                uppercase font-bold
+                duration-700 ease-in-out
+                cursor-pointer" href="#">Add to cart</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product__item bg-white delay-150 mx-auto">
+                    <div class="product__img"><img src="../img/popular/popular_products.png" alt=""></div>
+                    <div class="product__descr relative p-4">
+                      <div class="
+            product__reviews
+            flex justify-start items-center
+            ">
+                        <ul class="flex justify-start">
+                          <li><span><svg class="icon icon-star fill-current text-yellowIcon">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                              </svg></span></li>
+                          <li><span><svg class="icon icon-star fill-current text-yellowIcon">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                              </svg></span></li>
+                          <li><span><svg class="icon icon-star fill-current text-yellowIcon">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                              </svg></span></li>
+                          <li><span><svg class="icon icon-star fill-current text-yellowIcon">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                              </svg></span></li>
+                          <li><span><svg class="icon icon-star fill-current text-yellowIcon">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                              </svg></span></li>
+                        </ul><a class="
+
+                text-sm text-dull
+                pl-3
+                underline
+                " href="#">266 reviews</a>
+                      </div>
+                      <h3 class="text-black py-5 text-xl font-semibold">Trending Collars</h3>
+                      <p class="text-dull text-base py-2">15 Amazing colors, Sturdy tips, Smooth application</p>
+                      <div class="product_price"><span class="new text-black text-xl font-bold mr-6">$19,95</span><span class="old line-through font-light text-xl text-dull">$25,95</span></div>
+                      <div class="
+            product_btn
+            py-6
+            duration-700 ease-in-out
+            w-full
+            bg-white
+            absolute
+            flex justify-center
+            opacity-0"><a class="
+                btn-white
+                flex items-center justify-center
+                bg-white
+                text-black text-sm
+                w-full
+                uppercase font-bold
+                duration-700 ease-in-out
+                cursor-pointer" href="#">Add to cart</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product__item bg-white delay-150 mx-auto">
+                    <div class="product__img"><img src="../img/popular/popular_products.png" alt=""></div>
+                    <div class="product__descr relative p-4">
+                      <div class="
+            product__reviews
+            flex justify-start items-center
+            ">
+                        <ul class="flex justify-start">
+                          <li><span><svg class="icon icon-star fill-current text-yellowIcon">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                              </svg></span></li>
+                          <li><span><svg class="icon icon-star fill-current text-yellowIcon">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                              </svg></span></li>
+                          <li><span><svg class="icon icon-star fill-current text-yellowIcon">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                              </svg></span></li>
+                          <li><span><svg class="icon icon-star fill-current text-yellowIcon">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                              </svg></span></li>
+                          <li><span><svg class="icon icon-star fill-current text-yellowIcon">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                              </svg></span></li>
+                        </ul><a class="
+
+                text-sm text-dull
+                pl-3
+                underline
+                " href="#">266 reviews</a>
+                      </div>
+                      <h3 class="text-black py-5 text-xl font-semibold">Trending Collars</h3>
+                      <p class="text-dull text-base py-2">15 Amazing colors, Sturdy tips, Smooth application</p>
+                      <div class="product_price"><span class="new text-black text-xl font-bold mr-6">$19,95</span><span class="old line-through font-light text-xl text-dull">$25,95</span></div>
+                      <div class="
+            product_btn
+            py-6
+            duration-700 ease-in-out
+            w-full
+            bg-white
+            absolute
+            flex justify-center
+            opacity-0"><a class="
+                btn-white
+                flex items-center justify-center
+                bg-white
+                text-black text-sm
+                w-full
+                uppercase font-bold
+                duration-700 ease-in-out
+                cursor-pointer" href="#">Add to cart</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product__item bg-white delay-150 mx-auto">
+                    <div class="product__img"><img src="../img/popular/popular_products.png" alt=""></div>
+                    <div class="product__descr relative p-4">
+                      <div class="
+            product__reviews
+            flex justify-start items-center
+            ">
+                        <ul class="flex justify-start">
+                          <li><span><svg class="icon icon-star fill-current text-yellowIcon">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                              </svg></span></li>
+                          <li><span><svg class="icon icon-star fill-current text-yellowIcon">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                              </svg></span></li>
+                          <li><span><svg class="icon icon-star fill-current text-yellowIcon">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                              </svg></span></li>
+                          <li><span><svg class="icon icon-star fill-current text-yellowIcon">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                              </svg></span></li>
+                          <li><span><svg class="icon icon-star fill-current text-yellowIcon">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                              </svg></span></li>
+                        </ul><a class="
+
+                text-sm text-dull
+                pl-3
+                underline
+                " href="#">266 reviews</a>
+                      </div>
+                      <h3 class="text-black py-5 text-xl font-semibold">Trending Collars</h3>
+                      <p class="text-dull text-base py-2">15 Amazing colors, Sturdy tips, Smooth application</p>
+                      <div class="product_price"><span class="new text-black text-xl font-bold mr-6">$19,95</span><span class="old line-through font-light text-xl text-dull">$25,95</span></div>
+                      <div class="
+            product_btn
+            py-6
+            duration-700 ease-in-out
+            w-full
+            bg-white
+            absolute
+            flex justify-center
+            opacity-0"><a class="
+                btn-white
+                flex items-center justify-center
+                bg-white
+                text-black text-sm
+                w-full
+                uppercase font-bold
+                duration-700 ease-in-out
+                cursor-pointer" href="#">Add to cart</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product__item bg-white delay-150 mx-auto">
+                    <div class="product__img"><img src="../img/popular/popular_products.png" alt=""></div>
+                    <div class="product__descr relative p-4">
+                      <div class="
+            product__reviews
+            flex justify-start items-center
+            ">
+                        <ul class="flex justify-start">
+                          <li><span><svg class="icon icon-star fill-current text-yellowIcon">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                              </svg></span></li>
+                          <li><span><svg class="icon icon-star fill-current text-yellowIcon">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                              </svg></span></li>
+                          <li><span><svg class="icon icon-star fill-current text-yellowIcon">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                              </svg></span></li>
+                          <li><span><svg class="icon icon-star fill-current text-yellowIcon">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                              </svg></span></li>
+                          <li><span><svg class="icon icon-star fill-current text-yellowIcon">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                              </svg></span></li>
+                        </ul><a class="
+
+                text-sm text-dull
+                pl-3
+                underline
+                " href="#">266 reviews</a>
+                      </div>
+                      <h3 class="text-black py-5 text-xl font-semibold">Trending Collars</h3>
+                      <p class="text-dull text-base py-2">15 Amazing colors, Sturdy tips, Smooth application</p>
+                      <div class="product_price"><span class="new text-black text-xl font-bold mr-6">$19,95</span><span class="old line-through font-light text-xl text-dull">$25,95</span></div>
+                      <div class="
+            product_btn
+            py-6
+            duration-700 ease-in-out
+            w-full
+            bg-white
+            absolute
+            flex justify-center
+            opacity-0"><a class="
+                btn-white
+                flex items-center justify-center
+                bg-white
+                text-black text-sm
+                w-full
+                uppercase font-bold
+                duration-700 ease-in-out
+                cursor-pointer" href="#">Add to cart</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="bg-black py-6 relative z-1">
+        <div class="container">
+          <div class="px-5 sm:px-0 flex flex-wrap">
+            <div class="w-full xs:w-1/2 md:w-1/4"><a class="footer__logo" href="#"><img class="object-contain" src="../img/footer/logo-footer.png" alt=""></a>
+              <ul class="flex justify-start py-6">
+                <li class="pr-6"><a href="#"><svg class="icon icon-fb ">
+                      <use xlink:href="img/sprite.svg#icon-fb"></use>
+                    </svg></a></li>
+                <li class="pr-6"><a href="#"><svg class="icon icon-insta ">
+                      <use xlink:href="img/sprite.svg#icon-insta"></use>
+                    </svg></a></li>
+                <li class="pr-6"><a href="#"><svg class="icon icon-twitter ">
+                      <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                    </svg></a></li>
+                <li class="pr-6"><a href="#"><svg class="icon icon-pinterest ">
+                      <use xlink:href="img/sprite.svg#icon-pinterest"></use>
+                    </svg></a></li>
+                <li class="pr-6"><a href="#"><svg class="icon icon-youtube ">
+                      <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                    </svg></a></li>
+                <li class="pr-6"><a href="#"><svg class="icon icon-tiktok ">
+                      <use xlink:href="img/sprite.svg#icon-tiktok"></use>
+                    </svg></a></li>
+              </ul>
+              <div class="copyright text-white text-sm opacity-75 font-light not-italic pb-6">
+                <p class="pb-6">© 2020 Artistro. All rights reserved.</p>
+                <div class="copyright__link"><a class="pr-5 underline" href="#">Terms of Service</a><a class="pr-5 underline" href="#">Privacy policy</a></div>
+              </div>
+            </div>
+            <div class="w-full xs:w-1/2 md:w-1/4 sm:pl-5">
+              <h3>Help</h3>
+              <ul class="footer__list">
+                <li> <a class="underline" href="#">info@artistro.com</a></li>
+                <li> <span>9906 67 Road</span></li>
+                <li> <span>Forest Hills, NY 11375 </span></li>
+              </ul>
+            </div>
+            <div class="w-full xs:w-1/2 md:w-1/4">
+              <h3>Info</h3>
+              <ul class="footer__list">
+                <li> <a href="#">Search</a></li>
+                <li> <a href="#">Privacy Policy</a></li>
+                <li> <a href="#">Refund Policy</a></li>
+                <li> <a href="#">Terms of Service</a></li>
+                <li> <a href="#">Shipping &amp; Delivery</a></li>
+              </ul>
+            </div>
+            <div class="w-full xs:w-1/2 md:w-1/4">
+              <h3>Let's Keep In Touch</h3>
+              <ul class="footer__list">
+                <li> <span>Subscribe to receive special offers,<br /> giveaways, and exclusive deals.</span></li>
+                <form class="w-full max-w-sm" action="post">
+                  <div class="flex items-center">
+                    <div class="w-7/12"><input class="text-sm" type="text" placeholder="Email"></div>
+                    <div class="w-5/12"><button>Sign Up</button></div>
+                  </div>
+                </form>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!--END out-->
+    <!--LOAD SCRIPTS-->
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>
