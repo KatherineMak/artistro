@@ -1,0 +1,54 @@
+mixin tutorial_item(img)
+    .tutorials__item
+        .tutorials__img
+            img(src=img, alt="")
+        .tutorials__descr.p-8.relative.shadow-normal
+            .data.font-noto.text-sm.text-black.font-normal.flex.justify-between.items-center.py-6 
+                .data__time.flex.items-center.text-sm.font-normal
+                    span.pr-2
+                        +icon('clock','fill-current')
+                    span Time to read: 
+                        b 5 min
+                .data__level.flex.items-center.text-sm.font-normal
+                    span.pr-2
+                        +icon('round-star','fill-current')
+                    span Level:  
+                        b Easy
+            .tutorials__title.font-noto.text-2xl.text-black.font-bold.uppercase.py-1
+                h3 Easy guide 'How to draw' from Artistro!
+            .tutorials__guide.font-noto.flex.justify-between.items-center.py-4 
+                span.font-button.text-base.text-grayThird Guide
+                a(href="#").flex.justify-between.items-center.font-button.text-2x.uppercase.font-bold Read now
+                    span.pl-2
+                        +icon('arrow-more','fill-current')
+//- BEGIN tutorials
+section.tutorials.relative.pt-12
+    .tutorials__decor__top.absolute.bg-cover(style="background-image: url(../img/tutorials/decor-top.svg)")
+    div(class="lg:block", style="background-image: url(../img/bg/decor-tutorial.svg)").tutorials__decor__bottom.absolute.bg-contain.bg-no-repeat.-z-1.hidden
+    .container
+        div(class="md:px-0").px-5
+            .swiper-container.tutorials__slider
+                div(class="w-1/2 sm:w-full").py-16
+                    h2.text-7xl.font-mono.font-bold.leading-none Recent tutorials
+                .swiper__button.tutorials__btn.absolute.flex.p-4.items-center.right-0
+                    .button-next.p-4.duration-700.ease-in-out.cursor-pointer
+                        +icon('arrow-left','fill-current')
+                    .button-prev.p-4.duration-700.ease-in-out.cursor-pointer
+                        +icon('arrow-right','fill-current')
+                .swiper-wrapper
+                    div.swiper-slide
+                        +tutorial_item("../img/tutorials/tutorials-01.jpg")
+                    div.swiper-slide
+                        +tutorial_item("../img/tutorials/tutorials-02.jpg")
+                    div.swiper-slide
+                        +tutorial_item("../img/tutorials/tutorials-03.jpg")
+                    div.swiper-slide
+                        +tutorial_item("../img/tutorials/tutorials-03.jpg")
+                    div.swiper-slide
+                        +tutorial_item("../img/tutorials/tutorials-03.jpg")
+                    div.swiper-slide
+                        +tutorial_item("../img/tutorials/tutorials-03.jpg")
+                .w-full.relative.flex.justify-center.p-8
+                    a(href="#").btn-white.btn-white-big Read all
+
+//- END tutorials

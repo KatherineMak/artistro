@@ -1,0 +1,52 @@
+// BEGIN reviews
+.reviews
+    height: 300px
+    +r($xl)
+        height: 250px
+    &__decor
+        width: 90px
+        height: 90px
+        top: -15%
+        left: 5%
+    .swiper-container
+        margin-bottom: -60px
+    .swiper-slide
+        height: 405px
+    .swiper__button
+        @apply absolute flex p-4 items-center
+        font-size: 35px
+        bottom: 50px
+        left: -420px
+        z-index: 2
+        +r($xl)
+            left: -50%
+        +r($md)
+            font-size: 16px
+            bottom: 150px
+        span
+            color: #050000
+            @apply p-4 duration-700 ease-in-out cursor-pointer
+            &:hover
+                color: #5F5F5F
+.reviews__item
+    @apply relative
+    &::after
+        content: ''
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 1.5em 1.5em 1.5em 1.5em
+        border-color: white transparent transparent transparent
+        position: absolute
+        left: 30px
+        bottom: -42px
+        +r($xl)
+            bottom: -30px
+.reviews__author
+    background: no-repeat url("../img/reviews/quotes.png")
+    .name
+        @apply   text-xl text-black font-bold
+    .which
+        @apply   text-tiny text-graySecond
+
+// END reviews

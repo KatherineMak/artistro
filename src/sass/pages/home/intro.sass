@@ -1,0 +1,38 @@
+//BEGIN intro
+.intro 
+    min-height: 765px
+    &__decor
+        width: 300px
+        height: 700px
+        +r($xl)
+            width: 200px
+            height: 600px
+            bottom: -50%
+    &__img
+        height: 700px
+        +r($md)
+            height: 100%
+            min-height: 400px
+        img
+            max-width: inherit
+            width: inherit
+            top: -50px
+            +r($xl)
+                top: -100px
+            +r($md)
+                width: 100%
+                top: 0
+                height: 100%
+// END intro
+
+.btn
+    @apply flex items-center justify-center bg-black text-lg text-white  h-16 font-semibold uppercase cursor-pointer
+    max-width: 383px
+    min-width: 275px
+    min-height: 73px
+    +r($xl)
+        min-width: 40px
+        min-height: 40px
+    &:hover
+        @apply bg-white text-black duration-700 ease-in-out
+        border: 1px solid #262626

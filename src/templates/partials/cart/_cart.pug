@@ -1,0 +1,79 @@
+//- BEGIN cart
+mixin cart_item
+    div(class="xs:flex-no-wrap").cart-item.flex.flex-wrap.border.border-solid.border-lightGray.p-4.items-center.cursor-pointer.bg-white.justify-center
+        .flex.items-center
+            img(src="../img/cart/cart-item.png", alt="")
+            p(class=`
+            font-sans
+            text-tiny
+            leading-snug
+
+            px-4
+            `) Paint pens for rock painting, stone and metal. Set of 15 permanent paint markers
+        div(class=`
+        flex
+        flex-col
+        pr-4
+        `)
+            h3.font-sans.font-bold.text-xs.uppercase.leading-snug.text-dull Sale:
+            p.font-sans.line-through.font-light.text-base.text-dull $25,95
+        div(class=`
+        flex
+        flex-col
+        pr-4
+        `)
+            h3.font-sans.font-bold.text-xs.uppercase.leading-snug.text-dull Price:
+            p.font-sans.font-bold.text-base $19,95
+        div(class=`
+        flex
+        border
+        border-solid
+        border-lightGray
+        p-1
+        cart-item__btns
+        `)
+            button.px-4.py-2.border-r.border-solid.border-lightGray.text-gray.text-xxs
+                +icon('minus', 'fill-current')
+            span.font-sans.font-bold.text-xl.leading-none.text-dull.px-5.py-4 1
+            button.px-4.py-2.border-l.border-solid.border-lightGray.is-active
+                +icon('plus', 'fill-current')
+        button.ml-4.text-gray
+            +icon('close', 'fill-current')
+
+section.cart.relative.pb-8
+    .container.relative.z-1
+        .flex.flex-wrap
+            div(class="w-full md:w-8/12 sm:px-0").px-5
+                .pt-12.pb-8
+                    h1.font-mono.font-bold.text-9xl.uppercase.leading-none Cart
+                p.font-sans.text-lg.leading-none.mb-5 You have <b> 3 item(s)</b> in your cart:
+                +cart_item
+                +cart_item
+                +cart_item
+                p.font-sans.text-lg.leading-none.mt-8.mb-5 Include any notes or special instructions for yor order:
+                textarea(placeholder="Аny notes...", rows="3").border.border-solid.border-lightGray.p-4.resize-none.w-full
+            div(class="w-4/5 md:w-4/12 md:mt-0").flex.items-end.mx-auto.mt-5
+                div(class="lg:ml-8").bg-lightPink.ml-4
+                    h3.font-sans.text-2xl.leading-tight.pt-6.mb-2.pl-8 Subtotal:
+                        span(class="lg:text-40px").text-3xl.leading-relaxed.ml-4 $19,95
+                    hr.border-t-2.border-light
+                    form(class="lg:p-8").p-6
+
+                        label(for="country").text-xs.mb-4 Choose your country
+                        select.bg-white.my-4.p-3.w-full.text-sans.text-sm.text-dull(class='hover:border-gray-500 focus:outline-none focus:shadow-outline')#country
+                                option United States
+                                option United States
+                                option United States
+
+                        label(for="state").text-xs.mb-4 Choose your state
+                        select.bg-white.my-4.p-3.w-full.text-sans.text-sm.text-dull(class='hover:border-gray-500 focus:outline-none focus:shadow-outline')#state
+                            option Alabama
+                            option Alabama
+                            option Alabama
+
+                        label(for="postal").text-xs.mb-4 Your postal code
+                        input#postal(placeholder="ew453435636").mt-4.mb-6.p-3.w-full.text-sans.text-sm.text-dull
+
+                        button.border.border-solid.border-black.uppercase.font-bold.text-sans.w-full.mb-6.text-tiny.bg-transparent.h-12.text-black calculate shipping rates
+                        button.text-sans.text-white.bg-black.uppercase.font-bold.w-full.text-tiny.h-12 checkout
+//- END cart

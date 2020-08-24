@@ -1,0 +1,44 @@
+//- BEGIN choose
+mixin choose_pen(img, active)
+    li
+        a(href="#", class=active).overflow-hidden.block.relative.duration-500
+            img(src=img, alt="")
+
+mixin choose_list(img, title, desc)
+    li.relative.flex.items-center.py-4
+        img(src=img, alt="")
+        div.chooseType.pl-5
+            a(href="#").font-bold.text-base.text-lg= title
+            p.font-normal.text-lg= desc
+
+section.choose.bg-blueChoose.pt-2
+    .container
+        div(class="sm:px-0 px-5").flex.flex-wrap
+            div(class="sm:w-4/12 w-full")
+                .py-20
+                    h2.font-mono.font-bold.text-90px.uppercase.leading-none Choose your <br/> color and tip
+            div(class="sm:w-4/12 w-full").flex.items-center
+                .choose__img.relative
+                    img(src="../img/choose/choose-1.png", alt="")
+            div(class="sm:w-4/12 w-full flex flex-col items-center sm:items-end")
+                .subtitle.py-8.pr-16
+                    h3.text-15px.font-bold Choose your Tip
+                ul.tipList
+                    +choose_list("../img/choose/tip/extra.png", "Extra Fine Tip", "0.7-1 mm")
+                    +choose_list("../img/choose/tip/fine.png", "Fine Tip", "0.7-1 mm")
+                    +choose_list("../img/choose/tip/medium.png", "Medium Tip", "0.7-1 mm")
+                    +choose_list("../img/choose/tip/eraser.png", "Eraser")
+        .choosePen
+            .container
+                ul.choose__pen.flex.justify-center.relative
+                    +choose_pen('../img/choose/choosePen/choosePen-01.png')
+                    +choose_pen('../img/choose/choosePen/choosePen-01.png')
+                    +choose_pen('../img/choose/choosePen/choosePen-01.png')
+                    +choose_pen('../img/choose/choosePen/choosePen-01.png')
+                    +choose_pen('../img/choose/choosePen/choosePen-01.png', 'active')
+                    +choose_pen('../img/choose/choosePen/choosePen-01.png')
+                    +choose_pen('../img/choose/choosePen/choosePen-01.png')
+                    +choose_pen('../img/choose/choosePen/choosePen-01.png')
+                    +choose_pen('../img/choose/choosePen/choosePen-01.png')
+                    +choose_pen('../img/choose/choosePen/choosePen-01.png')
+//- END choose

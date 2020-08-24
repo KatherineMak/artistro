@@ -1,0 +1,28 @@
+//- BEGIN productDescription
+section.productDescription.relative.my-12
+    .productDescription__decor.absolute.z-0
+        img(src="../img/bg/decor-description.svg", alt="")
+    div(class="sm:px-0").container.relative.z-1.px-5
+        .flex.flex-wrap.justify-between
+            div(class="w-full lg:w-8/12")
+                .flex.flex-wrap.items-end
+                    div(class="w-1/3")
+                        button(onclick="openTab(event, 'description', 'tablinks__desc', 'tabcontent__desc')", id="descriptionOpen").tablinks__desc.flex.justify-center.font-mono.text-40px.text-grayFourth.uppercase.w-full.border-b.border-solid.border-lightGray Description
+                    div(class="w-1/3")
+                        button(onclick="openTab(event, 'shipping', 'tablinks__desc', 'tabcontent__desc')").tablinks__desc.flex.justify-center.font-mono.text-40px.text-grayFourth.uppercase.border-b.border-solid.border-lightGray.w-full Shipping & Returns
+                    div(class="w-1/3")
+                        button(onclick="openTab(event, 'details', 'tablinks__desc', 'tabcontent__desc')").tablinks__desc.flex.justify-center.font-mono.text-40px.text-grayFourth.uppercase.border-b.border-solid.border-lightGray.w-full Technical Details
+                #description.tabcontent__desc
+                    div(class="w-10/12")
+                        h2.font-sans.text-lg.terxt-black.uppercase.font-bold.my-8 At Artistro we believe that expressing one's creativity through something handcrafted is priceless!
+                    p.font-sans.text-base.text-black.mb-6 Artistro is dedicated to helping any and every creator reach their potential. Above all, we are a family business whose focus is and always will be on the people who make up our vibrant, growing community. We value everyone’s art and support professionals and amateurs alike, forging enduring partnerships with small businesses and freelance creatives as well as mentoring and advising young artists and craft lovers who have just started their artistic adventures. Artistro also donates to various arts-related institutions.
+                    p.font-sans.text-base.text-black Artistro is the place for you to feel inspired, welcomed and excited about arts and crafts. Rock painting, mug design, fabric design, doodling, bullet journaling, lettering, kids' crafts -name them all - we've got you covered with highly rated, extremely good art supplies!
+                #shipping.tabcontent__desc
+                    p Shipping & Returns
+                #details.tabcontent__desc
+                    p Technical Details
+            div(class="lg:w-4/12 lg:block").pl-8.hidden
+                div(class="lg:flex lg:items-center").productDescription__img.relative
+                    img(src="../img/product-description/description.png", alt="").object-contain.absolute.left-0.top-0
+
+//- END productDescription

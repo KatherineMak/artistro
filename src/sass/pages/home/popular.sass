@@ -1,0 +1,37 @@
+// BEGIN popular
+.popular
+    &__decor
+        top: -55%
+    .swiper-button
+        z-index: 10
+        top: 60px
+        span
+            color: #050000
+            &:hover
+                color: #5F5F5F
+    .swiper-slide
+        height: 640px
+        +r($xl)
+            height: 500px
+        +r($md)
+            height: 600px
+.product__item 
+    //width: 282px
+    cursor: pointer
+    .product_btn
+        left: 0
+        bottom: -95px
+        +r($xl)
+            bottom: -80px
+    .btn-white
+        min-height: 50px
+        max-width: 224px
+        border: 1.5px solid #262626
+        +r($xl)
+            width: 80%
+        &:hover
+            @apply bg-black  text-white
+
+.product__item:hover .product_btn
+    opacity: 1
+// END popular

@@ -1,0 +1,20 @@
+//- BEGIN createAccount
+section(class="xs:py-20").createAccount.bg-lightPink.relative.py-10.overflow-hidden
+    div(class="lg:block", style="background-image: url(../img/bg/decor-account.svg)").hidden.createAccount__decor.absolute.bg-contain.bg-no-repeat.left-0.z-0
+    .container.relative.z-1
+        div(class="sm:justify-between sm:px-0").flex.flex-wrap.justify-center.px-5
+            div(class="sm:mb-0 w-10/12 sm:w-1/2 sm:pr-4 lg:pr-0").mb-8.pr-0
+                h1(class="sm:my-8").my-4.font-mono.text-black.text-9xl.font-bold.uppercase.leading-none Create account
+                p.font-sans.text-black.text-base Join the Artistro Club and be rewarded 200 Art Coins
+            div(class="w-10/12 sm:w-1/2 lg:w-5/12")
+                form.flex.flex-col.bg-white.shadow-large.p-12
+                    label(for="firstname").pb-2.text-dull First name
+                    input#firstname.p-4.font-sans.text-tiny.text-dull.border.border-solid.border-lightGray.mb-4
+                    label(for="lastname").pb-2.text-dull Last name
+                    input#lastname.p-4.font-sans.text-tiny.text-dull.border.border-solid.border-lightGray.mb-4
+                    label(for="email").pb-2.text-dull E-mail
+                    input#email.p-4.font-sans.text-tiny.text-dull.border.border-solid.border-lightGray.mb-4
+                    label(for="password").pb-2.text-dull Password
+                    input#password(type="password").p-4.font-sans.text-tiny.text-dull.border.border-solid.border-lightGray.mb-8
+                    button(class="w-1/2").flex.justify-center.bg-black.text-white.text-lg.font-noto.py-5.font-button.uppercase Sing up
+//- END createAccount

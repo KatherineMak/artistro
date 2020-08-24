@@ -1,0 +1,23 @@
+//BEGIN banner
+section.banner.bg-lightPink
+    div(class="lg:block", style="background-image: url(../img/bg/decor.svg)").banner__decor.absolute.bg-contain.bg-no-repeat.left-0.z-0.hidden
+    .container.relative.z-1
+        div(class="px-5 sm:px-0").flex.flex-wrap.items-center
+            div(class="sm:w-4/12 w-full")
+                h2(class="lg:text-9xl sm:py-0").text-7xl.font-mono.font-bold.leading-none.py-3 Acrylic paint markers
+            div(class="sm:w-8/12 w-full")
+                .swiper-container.catalog-slider.relative.z-1
+                    .catalog-slider__buttons.absolute.bottom-0.flex.p-4.items-center.text-4xl.z-2
+                        button.catalog-slider__next.p-4.duration-700.ease-in-out.cursor-pointer
+                            +icon('arrow-left','fill-current')
+                        button.catalog-slider__prev.p-4.duration-700.ease-in-out.cursor-pointer
+                            +icon('arrow-right','fill-current')
+                    .swiper-wrapper
+                        .swiper-slide
+                            .banner__img.flex.justify-end
+                                img(src="../img/catalog/banner-slide.png", alt="")
+                        .swiper-slide
+                            .banner__img.flex.justify-end
+                                img(src="../img/catalog/banner-slide.png", alt="")
+
+//END banner

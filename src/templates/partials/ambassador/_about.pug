@@ -1,0 +1,27 @@
+- var icons = ['fb', 'insta', 'twitter', 'pinterest', 'youtube', 'tiktok']
+//- BEGIN  ambassadorAbout
+section.ambassadorAbout.bg-lightPink.relative.pb-10
+    div(class="lg:block", style="background-image: url(../img/bg/decor.svg)").hidden.ambassadorAbout__decor.absolute.bg-contain.bg-no-repeat.left-0.z-0
+    .overflow-hidden
+        div(class="sm:px-0").container.relative.z-1.px-5
+            div(class="md:flex-no-wrap").flex.flex-wrap
+                div(class="w-full md:w-6/12 xl:w-5/12")
+                    h1(class="sm:text-120px xl:text-10xl").mt-10.font-mono.text-black.text-7xl.leading-none.font-bold Artistro Ambassador Program
+                    .flex.items-center.my-6
+                        p.font-sans.text-black.text-xl.uppercase Share
+                        ul(class="xs:flex-no-wrap").flex.flex-wrap
+                            each icon in icons
+                                li.flex.justify-center.items-center.social-icon.bg-yellow.rounded-50.m-2
+                                    a(href="#").text-base
+                                        +icon(icon)
+                    div(class="w-7/12 md:w-10/12 sm:mx-0").mx-auto
+                        a(href="#").flex.justify-center.bg-black.text-white.text-lg.font-noto.py-5.font-button.uppercase.w-full.mb-8 Join
+                div(class="w-full md:w-7/12 md:mb-0").mb-6
+                    div(class="lg:flex lg:items-center").ambassadorAbout__img.relative
+                        img(src="../img/ambassador/ambassador.png", alt="").object-contain.absolute.top-0
+            .font-sans
+                p.pb-3 You as an Artistro Ambassador are inspiring creators from around the world. You help us to keep our finger on the pulse of your communities and provide us with invaluable feedback so that we can improve and grow.
+                p.pb-3  Through Artistro Ambassador Program you receive tools and experiences, product to try out, a network of like-minded people, and support from us. Our relationship opens up the possibility to get up to big things together - to make a difference in artistic communities!
+                p.pb-3  You are not in just a partnership, you are an extension to the Artistro brand! You are the face of the brand!
+
+//- END comment

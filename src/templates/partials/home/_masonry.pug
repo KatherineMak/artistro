@@ -1,0 +1,47 @@
+//- BEGIN surface
+mixin masonry_item(img, size)
+    div(class="pb-4 sm:pb-0").item
+        .relative.overflow-hidden(class=size)
+            img(src=img, alt="").w-full.h-full.object-contain
+            h2(class=`
+                title
+                flex items-end
+                w-full h-full
+                absolute z-10 top-0
+                  text-white text-28px font-bold uppercase
+                pl-12 pb-12
+                duration-500
+                justify-center
+            `)
+                span wood
+            div(class=`
+                link
+                flex flex-col justify-center items-center
+                w-full h-full
+                absolute left-0 z-20
+                duration-700 ease-in-out
+                bg-pinkBG
+            `)
+                a(href="#" class="lg:text-tiny lg:p-2 px-4").btn.mt-20 Find out more
+                div.flex.flex-row.items-center
+                    +icon('cart', 'fill-current')
+                    a(href="#").py-10.px-2.text-black.text-lg.font-bold Shop now
+
+section.masonry.relative.pb-20
+    div(class="md:block", style="background-image: url(../img/bg/decor-masonry.svg)").hidden.masonry__decor.absolute.bg-contain.bg-no-repeat.left-0.z-0
+    .container.relative.z-1
+        .text-center.py-16
+            h2(class="md:text-7xl").text-5xl.font-mono.font-bold.leading-none You get rich and opaque color with <br/> the first layer on any surface!
+        div(class="sm:flex-no-wrap sm:justify-between").flex.flex-wrap.justify-center
+            div(class="w-auto sm:mr-4 flex flex-col justify-between items-beetwen")
+                +masonry_item('../img/surface/textile.jpg', 'large')
+                +masonry_item('../img/surface/wood.jpg', 'small')
+                +masonry_item('../img/surface/plastis.jpg', 'small')
+            div(class="w-auto sm:mr-4 flex flex-col justify-between items-beetwen")
+                +masonry_item('../img/surface/textile.jpg', 'large')
+                +masonry_item('../img/surface/metal.jpg', 'large')
+            div(class="w-auto flex flex-col justify-between items-beetwen")
+                +masonry_item('../img/surface/paper.jpg', 'small')
+                +masonry_item('../img/surface/rocks.jpg', 'large')
+                +masonry_item('../img/surface/surface.jpg', 'small')
+//- END surface

@@ -1,0 +1,33 @@
+//- BEGIN  bannerClub
+.bannerClub
+  height: 560px
+  +r($lg)
+    height: 500px
+  +r($md)
+    height: 650px
+  +r($xs)
+    height: 500px
+  &__decor
+    width: 280px
+    height: 315px
+    bottom: -10%
+
+  &__img
+    img
+      max-width: 950px
+      height: 660px
+      +r($lg)
+        height: 460px
+      +r($md)
+        max-width: 100%
+        height: auto
+      //+r($xl)
+        width: 100%
+      //+r($tw-xl)
+        height: 400px
+        top: 55%
+        transform: translate(0, -50%)
+      //+r($md)
+        width: 100%
+        height: 100%
+//- END bannerClub

@@ -1,0 +1,20 @@
+mixin inst_img(src)
+    img.object-cover.w-full.h-full(src=src, alt="")
+//- BEGIN instagram
+section.instagram.relative.z-1
+    .flex
+        div(class="w-1/5")
+            +inst_img("../img/instagram/instagram-01.jpg")
+        div(class="w-1/5")
+            +inst_img("../img/instagram/instagram-02.jpg")
+        div(class="w-1/5").relative
+            +inst_img("../img/instagram/instagram-03.png")
+            .descr.bg-white.bg-opacity-75
+                +icon('big-inst','fill-current text-black text-4xl')
+                h4(class="xs:text-xl md:py-5").font-bold.text-black.text-base.uppercase.py-2 Follow instagram
+                p(class="sm:block lg:px-12").hidden.font-normal.text-black.text-base.px-2 Over 2 300 posts and over 90k followers
+        div(class="w-1/5")
+            +inst_img("../img/instagram/instagram-04.jpg")
+        div(class="w-1/5")
+            +inst_img("../img/instagram/instagram-05.jpg")
+//- END instagram

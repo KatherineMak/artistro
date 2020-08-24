@@ -1,0 +1,40 @@
+- var icons = ['star', 'star', 'star', 'star', 'star']
+
+mixin review_item()
+    .pr-4
+        .reviews__item.p-6.bg-white.relative
+            .reviews__header.flex.items-center
+                .reviews__foto
+                    img(src="../img/reviews/foto-01.jpg", alt="")
+                .reviews__author.p-6.bg-no-repeat(style="background-image: url('../img/reviews/quotes.png')")
+                    h3.name.p-1.text-xl.text-black.font-bold Katie R.
+                    p.which.p-1.text-tiny.text-graySecond.Customer
+                    ul.flex.justify-start.p-1
+                        each icon in icons
+                            li
+                                span
+                                    +icon(icon,'fill-current text-yellowIcon')
+            .reviews__descr.font-normal.text-black.text-sm.leading-loose
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, ex consequuntur! Nesciunt id consequuntur quasi eligendi optio dignissimos. Doloribus molestiae est in enim earum nam magnam expedita soluta autem blanditiis.
+
+section.reviews.relative
+    .reviews__decor.absolute.bg-contain.bg-no-repeat(style="background-image: url(../img/bg/decor-reviews.svg)")
+    .container
+        .flex
+            div(class="w-1/3").relative
+                h2(class="md:text-7xl pl-3 md:pl-0 pt-5 md:pt-0").text-5xl.font-mono.font-bold.leading-none What our <br/> customers say
+            div(class="w-2/3").flex.relative.justify-around
+                .swiper__button.absolute.flex.p-4.items-center.z-10.text-4xl
+                    span.button-next.p-4.duration-700.ease-in-out.cursor-pointer
+                        +icon('arrow-left','fill-current')
+                    span.button-prev.p-4.duration-700.ease-in-out.cursor-pointer
+                        +icon('arrow-right','fill-current')
+                .swiper-container.slider-reviews
+                    .swiper-wrapper
+                        .swiper-slide
+                            +review_item()
+                        .swiper-slide
+                            +review_item()
+                        .swiper-slide
+                            +review_item()
+//- END reviews

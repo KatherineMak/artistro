@@ -1,0 +1,73 @@
+//- BEGIN popular
+- var icons = ['star', 'star', 'star', 'star', 'star']
+
+mixin product__item
+    .flex.justify-center
+        .product__item.bg-white.delay-150
+            .product__img.cursor-pointer
+                img(src="../img/popular/popular_products.png", alt="")
+            .relative.p-4
+                div(class=`
+                product__reviews
+                flex justify-start items-center
+                `)
+                    ul.flex.justify-start
+                        each icon in icons
+                            li
+                                span
+                                    +icon(icon,'fill-current text-yellowIcon')
+                    a(href="#" class=`
+                    text-sm text-dull
+                    font-normal
+                    pl-3
+                    underline
+                    `) 266 rewievs
+                h3.text-black.py-5.text-xl.font-semibold Trending Collars
+                p.text-dull.text-base.py-2 15 Amazing colors, Sturdy tips, Smooth application
+                .product_price
+                    sapn.new.text-black.text-xl.font-bold.mr-6 $19,95
+                    span.old.line-through.font-light.text-xl.text-dull $25,95
+                div(class=`
+                product_btn
+                py-6
+                duration-700 ease-in-out
+                w-full
+                bg-white
+                absolute
+                flex justify-center
+                opacity-1
+                md:opacity-0`)
+                    a(href="#" class=`
+                    btn-white
+                    flex items-center justify-center
+                    bg-white
+                    text-black text-sm
+                    w-full
+                    uppercase font-bold
+                    duration-700 ease-in-out
+                    cursor-pointer`) Add to cart
+
+section(class="md:px-0 md:py-20").popular.relative.py-10.bg-lightPink.px-5
+    div(class="lg:block").popular__decor.absolute.z-0.right-0.hidden
+        img(src="../img/popular/decor.png", alt="")
+    .container
+        .swiper-container.slider-popular.relative
+            div(class="sm:w-full w-1/2").py-16
+                h2.font-mono.font-bold.text-90px.uppercase.leading-none Popular products
+            div(class="sm:text-4xl").swiper-button.absolute.right-0.flex.items-center.p-4.text-3xl
+                span.button-next.p-4.duration-700.ease-in-out.cursor-pointer
+                    +icon('arrow-left','fill-current')
+                span.button-prev.p-4.duration-700.ease-in-out.cursor-pointer
+                    +icon('arrow-right','fill-current')
+            .swiper-wrapper
+                .swiper-slide
+                    +product__item
+                .swiper-slide
+                    +product__item
+                .swiper-slide
+                    +product__item
+                .swiper-slide
+                    +product__item
+                .swiper-slide
+                    +product__item
+//- END popular

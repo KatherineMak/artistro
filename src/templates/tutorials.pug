@@ -1,0 +1,105 @@
+---
+title: Tutorials Page
+---
+extends layouts/_layout
+block content
+    //- BEGIN  tutorials-page
+    mixin tutorial_item(img)
+        div(class="sm:mx-0").tutorials__item.mt-6.mx-auto
+            .tutorials__img
+                img(src=img, alt="")
+            .tutorials__descr.p-8.relative.shadow-normal.z-1
+                .data.font-noto.text-sm.text-black.font-normal.flex.justify-between.items-center.py-6
+                    .data__time.flex.items-center.text-sm.font-normal
+                        span.pr-2
+                            +icon('clock','fill-current')
+                        span Time to read:
+                            b 5 min
+                    .data__level.flex.items-center.text-sm.font-normal
+                        span.pr-2
+                            +icon('round-star','fill-current')
+                        span Level:
+                            b Easy
+                .tutorials__title.font-noto.text-2xl.text-black.font-bold.uppercase.py-1
+                    h3 Easy guide 'How to draw' from Artistro!
+                .tutorials__guide.font-noto.flex.justify-between.items-center.py-4
+                    span.font-button.text-base.text-grayThird Guide
+                    a(href="#").flex.justify-between.items-center.font-button.text-2x.uppercase.font-bold Read now
+                        span.pl-2
+                            +icon('arrow-more','fill-current')
+
+    section.tutorials-page.relative.overflow-hidden
+        div(class="md:block").hidden.tutorials-page__decor__top.absolute.bg-contain.bg-no-repeat.left-0.z-0(style="background-image: url(../img/bg/decor.svg)")
+        div(class="md:block").hidden.tutorials-page__decor__bottom.absolute.bg-contain.bg-no-repeat.left-0.z-0(style="background-image: url(../img/bg/decor-tutorial.svg)")
+        div(class="md:px-0").container.relative.z-1.px-4
+            .pt-12.pb-8.flex.justify-between.items-end.flex-wrap
+                .flex.items-end
+                    h1.font-mono.font-bold.text-90px.uppercase.leading-none Tutorials
+                    p.text-sans.text-lg.text-dull.leading-normal.font-bold.mr-2.bg-beige.rounded-large.px-6.py-2.ml-4 Extra Fine Tips
+                div(class="lg:mt-0").catalog__filters.flex.justify-between.items-end.mt-4
+                    .catalog__filter.flex.items-center.mr-12
+                        label(for="category").text-sans.text-lg.text-black.font-bold.mr-2 Category:
+                        select#category.block.appearance-none.w-full.bg-white.text-sans.text-lg.text-black(class='hover:border-gray-500 focus:outline-none focus:shadow-outline')
+                            option All Totorials
+                            option All Totorials
+                            option All Totorials
+                    .catalog__filter.flex.items-center
+                        label(for="sort-by").text-sans.text-lg.text-black.font-bold.whitespace-no-wrap Sort by:
+                        select#sort-by.block.appearance-none.w-full.bg-white.text-sans.text-lg.text-black(class='hover:border-gray-500 focus:outline-none focus:shadow-outline')
+                            option Popular
+                            option Popular
+                            option Popular
+
+            .flex.shadow-normal
+                div(class="md:w-8/12 xs:w-6/12 w-4/12")
+                    .tutorials-banner__img.h-full
+                        img(src="../img/tutorials-page/tutorial-banner.png", alt="Tutorial banner").object-cover.w-full.h-full
+                div(class="md:w-4/12 xs:w-6/12 w-8/12").py-5.px-8.flex.flex-col.justify-center.bg-white
+                    .data.font-noto.text-sm.text-black.font-normal.flex.justify-between.items-center.pb-6
+                        .data__time.flex.items-center.text-sm.font-normal
+                            span.pr-2
+                                +icon('clock','fill-current')
+                            span Time to read:
+                                b.pl-2 5 min
+                        .data__level.flex.items-center.text-sm.font-normal
+                            span.pr-2
+                                +icon('round-star','fill-current')
+                            span Level:
+                                b.pl-2 Easy
+                    h2.font-noto.text-2xl.text-black.leading-normal.font-bold.uppercase.mb-4 Easy guide 'How to draw' from Artistro!
+                    .tutorials__guide.font-noto.flex.justify-between.items-center.pt-4
+                        span.font-button.text-base.text-dull.pr-3 Guide
+                        a(href="#" class="lg:px-8").flex.justify-between.items-center.font-button.text-white.text-2x.uppercase.font-bold.bg-black.py-4.px-4 Read now
+                            span.pl-6.text-sm
+                                +icon('arrow-more','fill-current')
+
+            div(class="xs:justify-between").flex.flex-wrap.justify-center
+                +tutorial_item("../img/tutorials/tutorials-01.jpg")
+                +tutorial_item("../img/tutorials/tutorials-02.jpg")
+                div(class="sm:mx-0").keep-in-touch.mt-6.bg-beige.relative.overflow-hidden.mx-auto
+                    .keep-in-touch__img.absolute.z-0
+                        img(src="../img/tutorials-page/keep-in-touch.png", alt="Keep in touch").object-contain
+                    form.p-6.pt-32
+                        h2.font-noto.text-50px.text-black.font-bold.uppercase.py-2.leading-tight Let's Keep In Touch
+                        p.font-sans.text-base.text-black.leading-relaxed.mb-8 Subscribe to receive special offers, giveaways, and exclusive deals.
+                        input(placeholder="Your mail").font-sans.text-base.text-black.leading-relaxed.p-4.mb-6.bg-white.w-full
+                        button.flex.justify-center.items-center.bg-black.text-2x.uppercase.font-button.font-bold.w-full.text-white.p-4 Sign Up
+                +tutorial_item("../img/tutorials/tutorials-03.jpg")
+                +tutorial_item("../img/tutorials/tutorials-03.jpg")
+                +tutorial_item("../img/tutorials/tutorials-02.jpg")
+
+
+            .flex.justify-center.py-10
+                div(class="w-full sm:w-3/5").flex.justify-around.font-mono.text-50px.text-gray.font-bold
+                    button.button-arrow.border.border-solid.border-darkGray.rounded-50.px-6.text-lg.text-dull
+                        +icon('arrow-left','fill-current')
+                    button 1
+                    button.text-black
+                        p 2
+                    button 3
+                    button 4
+                    button . . .
+                    button 12
+                    button.button-arrow.border.border-solid.border-darkGray.rounded-50.px-6.text-lg.text-dull
+                        +icon('arrow-right','fill-current')
+    //- END tutorials-page

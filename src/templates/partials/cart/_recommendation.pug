@@ -1,0 +1,69 @@
+- var icons = ['star', 'star', 'star', 'star', 'star']
+mixin recommendation_item
+    .product__item.bg-white.delay-150.mx-auto
+        .product__img
+            img(src="../img/popular/popular_products.png", alt="")
+        .product__descr.relative.p-4
+            div(class=`
+            product__reviews
+            flex justify-start items-center
+            `)
+                ul.flex.justify-start
+                    each icon in icons
+                        li
+                            span
+                                +icon(icon,'fill-current text-yellowIcon')
+                a(href="#" class=`
+
+                text-sm text-dull
+                pl-3
+                underline
+                `) 266 reviews
+            h3.text-black.py-5.text-xl.font-semibold Trending Collars
+            p.text-dull.text-base.py-2 15 Amazing colors, Sturdy tips, Smooth application
+            .product_price
+                span.new.text-black.text-xl.font-bold.mr-6 $19,95
+                span.old.line-through.font-light.text-xl.text-dull $25,95
+            div(class=`
+            product_btn
+            py-6
+            duration-700 ease-in-out
+            w-full
+            bg-white
+            absolute
+            flex justify-center
+            opacity-0`)
+                a(href="#" class=`
+                btn-white
+                flex items-center justify-center
+                bg-white
+                text-black text-sm
+                w-full
+                uppercase font-bold
+                duration-700 ease-in-out
+                cursor-pointer`) Add to cart
+//- BEGIN recommendation
+section.recommendation.relative.py-12.bg-blueChoose
+    div(class="md:block", style="background-image: url(../img/bg/decor-cart.svg)").hidden.recommendation__decor__top.absolute.bg-contain.bg-no-repeat.right-0.z-0
+    div(class="md:block", style="background-image: url(../img/bg/decor-tutorial.svg)").hidden.recommendation__decor__bottom.absolute.bg-contain.bg-no-repeat.left-0
+    div(class="sm:p-0").container.px-5
+        .swiper-container.recommendation__slider.relative
+            .py-16
+                h2(class="w-2/3 lg:w-full").text-90px.font-mono.font-bold.leading-none You may also be interested in...
+            .swiper__button.recommendation__btn.absolute.flex.p-4.items-center.right-0
+                button(class="sm:text-4xl sm:p-4").button-next.p-2.duration-700.ease-in-out.cursor-pointer.text-3xl
+                    +icon('arrow-left','fill-current')
+                button(class="sm:text-4xl sm:p-4").button-prev.p-2.duration-700.ease-in-out.cursor-pointer.text-3xl
+                    +icon('arrow-right','fill-current')
+            .swiper-wrapper
+                .swiper-slide
+                    +recommendation_item
+                .swiper-slide
+                    +recommendation_item
+                .swiper-slide
+                    +recommendation_item
+                .swiper-slide
+                    +recommendation_item
+                .swiper-slide
+                    +recommendation_item
+//- END recommendation

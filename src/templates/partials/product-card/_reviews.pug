@@ -1,0 +1,104 @@
+//- BEGIN productReviews
+- var icons = ['star', 'star', 'star', 'star', 'star']
+mixin filter_btn(name)
+    button(class="lg:mr-0").text-tiny.font-sans.text-black.font-bold.border.border-solid.border-lightGraySecond.px-4.py-2.mb-2.mr-2=name
+mixin review
+    .review.bg-blueChoose.p-6.flex.my-12
+        div(class="w-2/12 sm:w-1/12")
+            .avatar.relative
+                img(src="../img/reviews-product/avatar.png", alt="").w-full
+                img(src="../img/reviews-product/verified.svg", alt="").absolute.verified-img
+        div(class="w-10/12 sm:w-11/12").pl-4
+            .flex.justify-between.items-center
+                .flex.items-center.mt-3
+                    h2.font-sans.font-bold.text-lg.text-black.pr-4 Katya Kavuny
+                    p.font-sans.uppercase.text-white.bg-green.px-2.text-xs Verified buyer
+                p.font-sans.text-grayThird.text-tiny.pl-4 23.06.2020
+            .flex
+                img(src="../img/reviews-product/usa.png", alt="").object-contain
+                p.font-sans.text-sm.taxt-dull.pl-1 United States
+            .flex.my-4
+                ul.flex.justify-start.pr-2.text-base
+                    each icon in icons
+                        li.pr-1
+                            span
+                                +icon(icon,'fill-current text-yellowIcon')
+                p.font-sans.font-bold.text-sm.text-black I recommend this product!
+            .font-sans.text-black.text-base
+                h3.font-medium.pb-4 Best quality great product
+                p.pb-4 I'm totally in love with these markers!! They're high quality ink makes them rich and vibrant. They don't streak and blend with ease. love that the nibs are replaceable if they wear out. Hope they will make brush tips too! | also hope that means they will have ink to refill them as well in the near future!
+                p.pb-4 These are the absolute most comparable to Copics in my eyes and much more affordable. Maybe they will make more sets of colors.
+            .flex.flex-wrap.mb-4
+                img(src="../img/reviews-product/review.png", alt="").mr-5.mb-2
+                img(src="../img/reviews-product/review.png", alt="").mr-5.mb-2
+                img(src="../img/reviews-product/review.png", alt="")
+            hr.border-t-1.border-lightGray
+            .flex.justify-between.mt-4.font-sans.font-medium.text-black.text-tiny
+                button.flex.items-center
+                    +icon("share")
+                    span.pl-2 Share
+                .flex.items-center
+                    p Was this review helpful?
+                    p.flex.text-green.pl-4.items-center
+                        +icon('like', 'fill-current text-green')
+                        span.pl-2 21
+                    p.flex.text-red.pl-4.items-center
+                        span.pt-1
+                            +icon('dislike', 'fill-current text-red')
+                        span.pl-2 0
+
+section.productReviews.relative.my-12
+    div(class="md:block").hidden.productReviews__decor__top.absolute.z-0.left-0
+        img(src="../img/bg/decor-reviews-product.svg", alt="")
+    div(class="md:block").hidden.productReviews__decor__bottom.absolute.z-0
+        img(src="../img/bg/decor-recommended.svg", alt="")
+    div(class="sm:px-0").container.relative.z-1.px-10
+        div(class="w-full sm:w-1/2").flex.mx-auto.mb-4
+            div(class="w-1/2")
+                button(onclick="openTab(event, 'reviews', 'tablinks__rev', 'tabcontent__rev')", id="reviewsOpen").tablinks__rev.flex.justify-center.font-mono.text-40px.text-grayFourth.uppercase.w-full.font-bold.border-b.border-solid.border-lightGray.active Reviews 234
+            //    .border-b-2.border-solid.border-black
+            div(class="w-1/2")
+                button(onclick="openTab(event, 'questions', 'tablinks__rev', 'tabcontent__rev')").tablinks__rev.flex.justify-center.font-mono.text-40px.text-grayFourth.uppercase.border-b.border-solid.border-lightGray.w-full.font-bold Questions 54
+        #reviews.tabcontent__rev
+            h3.font-sans.font-bold.text-black.text-lg.uppercase.my-4 Filter reviews:
+            div(class="lg:justify-between").flex.flex-wrap.justify-start
+                +filter_btn('Case')
+                +filter_btn('Colors')
+                +filter_btn('Quality')
+                +filter_btn('Markers')
+                +filter_btn('Arteza')
+                +filter_btn('Products')
+                +filter_btn('Price')
+                +filter_btn('Variety')
+                +filter_btn('Color')
+                select.select-filter.py-2.pl-4.pr-24.font-sans.text-tiny.text-black.font-bold.border.border-solid.border-lightGraySecond.bg-white.mb-2(class='hover:border-gray-500 focus:outline-none focus:shadow-outline')
+                    option(disabled selected) Sort
+                    option Sort 1
+                    option Sort 2
+            +review
+            +review
+            +review
+        #questions.tabcontent__rev
+            p Questions
+script.
+    function openTab(event, tabName, tablinksName, tabcontentName) {
+        // Get all elements with class="tabcontent" and hide them
+        const tabcontent = document.getElementsByClassName(tabcontentName);
+        for (let i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        const tablinks = document.getElementsByClassName(tablinksName);
+        for (let j = 0; j < tablinks.length; j++) {
+            tablinks[j].className = tablinks[j].className.replace(" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(tabName).style.display = "block";
+        event.currentTarget.className += " active";
+
+    }
+    document.getElementById("descriptionOpen").click();
+    document.getElementById("reviewsOpen").click();
+//- END productReviews

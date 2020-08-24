@@ -1,0 +1,39 @@
+//- BEGIN surface
+.masonry
+    &__decor
+        width: 400px
+        height: 500px
+        top: -10%
+        z-index: -1
+    .item
+        width: 390px
+        +r($xl)
+            width: 100%
+        &:hover
+            .title
+                opacity: 0
+            .link
+                top: 0px
+            img
+                opacity: 0.7
+    .large
+        height: 513px
+        +r($xl)
+            height: 330px
+        +r($lg)
+            height: 300px
+        +r($md)
+            height: 260px
+
+    .small
+        height: 243px
+        +r($xl)
+            height: 150px
+        +r($lg)
+            height: 140px
+        +r($md)
+            height: 130px
+    .link
+        bottom: -512px
+        left: 0px
+//- END surface

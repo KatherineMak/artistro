@@ -1,0 +1,37 @@
+//- BEGIN productVideos
+mixin video_item
+    div
+        .video__img.relative.mb-5
+            img(src="../img/videos/video.png")
+            button.absolute.video__btn
+                img(src="../img/videos/btn-play.svg")
+        h3.font-mono.text-black.uppercase.text-3xl.font-bold Easy guide 'How to draw' from Artistro!
+section.productVideos.relative.my-12
+    div(class="md:block").hidden.productVideos__decor.absolute.z-0
+        img(src="../img/bg/decor-videos.svg", alt="")
+    div(class="sm:px-0").container.px-5
+        div(class=`
+        swiper-container
+        videos-slider
+        relative
+        `)
+            div(class="w-2/3").py-16
+                h2(class="xs:text-90px").font-mono.font-bold.text-74px.uppercase.leading-none Videos for this product
+            div(class=`
+            swiper-button
+            absolute
+            flex p-4 items-center
+            text-4xl
+            `)
+                button.button-next.p-4.duration-700.ease-in-out.cursor-pointer
+                    +icon('arrow-left','fill-current')
+                button.button-prev.p-4.duration-700.ease-in-out.cursor-pointer
+                    +icon('arrow-right','fill-current')
+            .swiper-wrapper
+                .swiper-slide
+                    +video_item
+                .swiper-slide
+                    +video_item
+                .swiper-slide
+                    +video_item
+//- END productVideos

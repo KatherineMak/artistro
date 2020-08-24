@@ -1,0 +1,47 @@
+//- BEGIN footer
+- var icons = ['fb', 'insta', 'twitter', 'pinterest', 'youtube', 'tiktok']
+- var infoItems = ['Search', 'Privacy Policy', 'Refund Policy', 'Terms of Service', 'Shipping & Delivery']
+footer.bg-black.py-6.relative.z-1
+    .container
+        div(class="px-5 sm:px-0").flex.flex-wrap
+            div(class="w-full xs:w-1/2 md:w-1/4")
+                a(href="#").footer__logo
+                    img(src="../img/footer/logo-footer.png", alt="").object-contain
+                ul.flex.justify-start.py-6
+                    each icon in icons
+                        li.pr-6
+                            a(href="#")
+                                +icon(icon)
+                .copyright.text-white.text-sm.opacity-75.font-light.not-italic.pb-6
+                    p.pb-6 © 2020 Artistro. All rights reserved.
+                    .copyright__link
+                        a(href="#").pr-5.underline Terms of Service
+                        a(href="#").pr-5.underline Privacy policy
+            div(class="w-full xs:w-1/2 md:w-1/4 sm:pl-5")
+                h3 Help
+                ul.footer__list
+                    li 
+                        a(href="#").underline info@artistro.com
+                    li 
+                        span 9906 67 Road
+                    li 
+                        span Forest Hills, NY 11375 
+            div(class="w-full xs:w-1/2 md:w-1/4")
+                h3 Info
+                ul.footer__list
+                    each infoItem in infoItems
+                        li 
+                            a(href="#")= infoItem
+            div(class="w-full xs:w-1/2 md:w-1/4")
+                h3 Let's Keep In Touch
+                ul.footer__list
+                    li 
+                        span Subscribe to receive special offers,<br/> giveaways, and exclusive deals.
+                    form(action="post").w-full.max-w-sm
+                        .flex.items-center
+                            div(class="w-7/12")
+                                input(type="text"  placeholder="Email").text-sm
+                            div(class="w-5/12")
+                                button Sign Up
+                    
+//- END footer

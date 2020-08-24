@@ -1,0 +1,32 @@
+// BEGIN recommendedProducts
+
+.recommendedProducts
+  .swiper-button
+    right: 0
+    top: 60px
+    z-index: 10
+    +r($xs)
+      top: 80px
+    span
+      color: #050000
+      &:hover
+        color: #5F5F5F
+
+  .swiper-slide
+    height: 700px
+    +r($tw-xl)
+      height: 550px
+    +r($md)
+      height: 650px
+    +r($xs)
+      height: 550px
+  &__decor
+    &__top
+      width: 775px
+      height: 780px
+      top: -45%
+    &__bottom
+      width: 250px
+      height: 560px
+      top: -5%
+// END recommendedProducts

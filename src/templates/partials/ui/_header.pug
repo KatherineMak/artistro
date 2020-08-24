@@ -1,0 +1,76 @@
+//BEGIN header
+- var items = ['Shipping', 'FAQ', 'Contact Us', 'info@artistro.com']
+- var icons = ['fb', 'insta', 'twitter', 'pinterest', 'youtube', 'tiktok']
+- var NavItems = ['Catalog', 'Tutorials', 'Insparation', 'Reviews', 'About Us']
+
+header
+  div(class="py-2 px-4 sm:px-2").top.bg-black
+    .container
+      .flex.items-center.text-white
+        a(href="#", class="sm:mr-20").mr-4.text-sm.font-normal Designed in USA
+        a(href="#", class="sm:mr-20").flex.items-center.mr-4.text-sm.font-normal
+          +icon('shipping', 'mr-2 fill-current')
+          | Free shipping
+        a(href="#").flex.items-center.text-sm.font-normal
+          +icon('guarantee', 'mr-2 fill-current')
+          | 365 day satisfaction guarantee
+  .middle.bg-white.p-4
+    .container
+      div(class="justify-center").flex.flex-wrap.items-center
+        div(class="w-full sm:w-6/12")
+          ul(class="justify-around sm:justify-between").flex
+            each item in items
+              li
+                a.text-base.font-normal(href="#")= item
+        div(class="w-4/12")
+          ul.flex.justify-end
+            each icon in icons
+              li.pl-6
+                a(href="#")
+                  +icon(icon)
+        div(class="w-2/12 flex items-center justify-end")
+          a.mr-4(href="#") Login
+          +icon('login')
+  .bottom.bg-lightPink.pt-2
+    .container
+      div(class="px-4 pb-2 sm:px-0").flex.items-center
+        div(class="w-2/12 flex items-center justify-between")
+          .logo
+            a(href="#")
+              img(src="../img/images/logo.png", alt="").object-contain
+        div(class="w-8/12 flex")
+          nav(class="hidden lg:block").w-full.pl-14
+            ul.flex.items-center.justify-around
+              each NavItem in NavItems 
+                li.pl-12
+                  a(class="xl:text-xl", href="#").text-base.uppercase.font-normal= NavItem
+        div(class="w-2/12")
+          .actions.flex.justify-end.w-full
+            a(href="#" class="text-3xl")
+              +icon('search', 'fill-current')
+            span.border.border-solid.border-lightGray.mx-8  
+            a(href="#" class="text-3xl")
+              +icon('cart', 'fill-current')
+        div(class="lg:hidden cursor-pointer ml-8").menu.relative
+          span.block.bg-black.my-1
+          span.block.bg-black.my-1
+          span.block.bg-black.my-1
+
+  div(class="w-1/2 sm:w-1/4").menu-popup.fixed.h-full.z-2.h-screen.bg-white.top-0.left-0.invisible
+    nav
+      ul.flex.flex-col.mt-16
+        each NavItem in NavItems
+          li.pl-8.m-4
+            a(href="#").text-xl.uppercase.font-normal= NavItem
+.menu-bg.w-full.h-full.fixed.left-0.top-0.z-2.bg-black.opacity-25.hidden
+//END header
+script.
+  $('.menu').click(function() {
+    $('.menu-popup').toggleClass('active');
+    $( '.menu-bg' ).fadeIn();
+  });
+  $('.menu-bg').click(function (e) {
+      e.preventDefault();
+      $('.menu-popup').toggleClass('active');
+      $('.menu-bg').fadeOut();
+  });

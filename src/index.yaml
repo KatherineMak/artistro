@@ -1,0 +1,21 @@
+ProjectTitle: artistro
+
+PageList:
+- file: home.html
+  ready: 50
+- file: catalog.html
+  ready: 50
+- file: cart.html
+  ready: 50
+- file: product-card.html
+  ready: 50
+- file: tutorials.html
+  ready: 50
+- file: tutorial.html
+  ready: 50
+- file: club.html
+  ready: 50
+- file: account.html
+  ready: 50
+- file: ambassador.html
+  ready: 50

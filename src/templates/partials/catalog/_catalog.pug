@@ -1,0 +1,93 @@
+//- BEGIN catalog
+- var icons = ['star', 'star', 'star', 'star', 'star']
+mixin product_item
+    .product__item.bg-white.delay-150.border-lightGray.border-solid.border.mb-4
+        .product__img.px-5.pt-5
+            img(src="../img/popular/popular_products.png", alt="")
+        .product__descr.relative.p-4
+            div(class=`
+            product__reviews
+            flex justify-between items-center
+            `)
+                ul.flex.justify-start
+                    each icon in icons
+                        li
+                            span
+                                +icon(icon,'fill-current text-yellowIcon')
+                a(href="#" class=`
+                text-sm text-dull
+                pl-3
+                underline
+                `) 266 reviews
+            h3.text-black.py-5.text-xl.font-semibold Trending Collars
+            p.text-dull.text-base.py-2 15 Amazing colors, Sturdy tips, Smooth application
+            .product_price
+                span.new.text-black.text-xl.font-bold.mr-6 $19,95
+                span.old.line-through.font-light.text-xl.text-dull $25,95
+
+
+section.catalog.relative
+    div(class="md:block", style="background-image: url(../img/bg/decor-tutorial.svg)").hidden.catalog__decor.absolute.bg-contain.bg-no-repeat.left-0.z-0
+    .container.relative.z-1
+        .pt-12.pb-8.flex.justify-between.items-end
+            .flex.flex-wrap.items-end
+                h1(class="pl-3 md:pl-0").font-mono.font-bold.text-90px.uppercase.leading-none Catalog
+                p.text-sans.text-lg.text-dull.leading-normal.font-bold.mr-2.bg-beige.rounded-large.px-4.py-1.ml-4 Extra Fine Tips
+            .catalog__filters.flex.justify-between.items-end.flex-wrap
+                .catalog__filter.flex.items-center.mr-12
+                    label(for="category").text-sans.text-lg.text-black.font-bold.mr-2 Category:
+                    select#category.block.appearance-none.w-full.bg-white.text-sans.text-lg.text-black(class='hover:border-gray-500 focus:outline-none focus:shadow-outline')
+                        option All Products
+                        option All Products
+                        option All Products
+                .catalog__filter.flex.items-center
+                    label(for="sort-by").text-sans.text-lg.text-black.font-bold.whitespace-no-wrap Sort by:
+                    select#sort-by.block.appearance-none.w-full.bg-white.text-sans.text-lg.text-black(class='hover:border-gray-500 focus:outline-none focus:shadow-outline')
+                        option Best Sellers
+                        option Best Sellers
+                        option Best Sellers
+        hr.border-t-1.border-dull.opacity-25
+        div(class="xs:justify-between xs:flex-no-wrap").flex.flex-wrap.justify-center.py-8
+            div(class="w-full xs:w-4/12 xl:w-2/12 xs:items-start").flex.flex-col.m-4.items-center
+                h2.text-sans.text-lg.text-dull.font-bold.mb-3 Select size
+                .radio.relative.mb-6
+                    input(type="radio" class="radio__input" id="extraFine" name="tip" checked)
+                    label(for="extraFine" class="radio__label").text-sans.text-lg.text-black <b> Extra Fine Tip </b></br>
+                        span.pl-10 0.7-1 mm
+                .radio.relative.mb-6
+                    input(type="radio" class="radio__input" id="fine" name="tip")
+                    label(for="fine" class="radio__label").text-sans.text-lg.text-black <b> Fine Tip </b></br>
+                        span.pl-10 1-2 mm
+                .radio.relative.mb-6
+                    input(type="radio" class="radio__input" id="medium" name="tip")
+                    label(for="medium" class="radio__label").text-sans.text-lg.text-black <b> Medium Tip </b></br>
+                        span.pl-10 2-3mm
+                h2.text-sans.text-lg.text-dull.font-bold.mb-3 Select type
+                .radio.relative.mb-6
+                    input(type="radio" class="radio__input" id="acrylic" name="type" checked)
+                    label(for="acrylic" class="radio__label").text-sans.text-lg.text-black <b> acrylic </b></br>
+                .radio.relative.mb-6
+                    input(type="radio" class="radio__input" id="oil" name="type")
+                    label(for="oil" class="radio__label").text-sans.text-lg.text-black <b> oil </b></br>
+                .catalog__sing-up.bg-violet.rounded-large.flex.flex-col.justify-between.relative.bg-no-repeat.bg-right-bottom.p-6(style='background-image:url(../img/catalog/bg-sing-up.svg)')
+                    h2.font-mono.font-bold.text-50px.uppercase.leading-tight.text-white Subscribe & Safe
+                    a(href="#", class="w-10/12").flex.justify-center.bg-black.text-white.text-tiny.font-sans.py-4.font-button.uppercase.font-bold.mx-auto Sign Up
+            div(class="w-full xs:w-8/12 xl:w-10/12")
+                div(class="md:justify-between").flex.justify-center.flex-wrap
+                    +product_item
+                    +product_item
+                    +product_item
+                    +product_item
+                    +product_item
+                    +product_item
+                    +product_item
+                    +product_item
+                    +product_item
+                    +product_item
+                    +product_item
+                    +product_item
+
+
+
+
+//- END catalog
